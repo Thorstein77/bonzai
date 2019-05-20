@@ -36,6 +36,14 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+div {
+  width: 200px;
+  height: 150px;
+  background: red;
+  -webkit-clip-path: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%);
+}
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 }
