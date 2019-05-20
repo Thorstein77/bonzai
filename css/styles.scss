@@ -36,12 +36,96 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-div {
-  width: 200px;
-  height: 150px;
-  background: red;
-  -webkit-clip-path: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%);
-  clip-path: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%);
+.shapeTest2{
+  position: relative;
+  width: 35%;
+  background-color: red;
+  margin-left: auto;
+
+  .shapeB, .shapeB:before, .shapeB:after{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .shapeB{
+    .side{
+      width: 45%;
+      height: 100%;
+      margin-left: auto;
+      background-color: #ffffff;
+    }
+  }
+
+  .shapeB:before{
+    content: " ";
+    background-color: #ffffff;
+    clip-path: circle(25% at 55% 32%);
+
+  }
+
+  .shapeB:after{
+    content: " ";
+    background-color: #ffffff;
+    clip-path: circle(30% at 55% 100%);
+
+  }
+}
+
+.shapeTest2:before{
+  content: " ";
+  display: block;
+  padding-top: 65%;
+}
+
+
+
+
+
+.testShape{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clip-svg {
+  clip-path: url(#myClip);
+}
+
+
+
+.parent{
+  width: 35%;
+  padding-top: 100%;
+  position: absolute;
+
+  right: 0;
+  background-color: red;
+  margin-top: 15vh;
+}
+
+.parent div, .parent div:before, .parent div:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.parent div{
+
+}
+
+.parent div:before{
+  content: " ";
+  background-color: #aaaaaa;
+  clip-path: circle(15% at 50% 25%);
+}
+
+.parent div:after{
+  content: " ";
+  background-color: #ff00ff;
+  clip-path: circle(25% at 50% 100%);
 }
 
 @media screen and (min-width: 768px) {
