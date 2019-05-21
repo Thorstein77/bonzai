@@ -28,35 +28,7 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-    <div class="shapeTest2">
-        <div class="shapeB">
-            <div class="side"></div>
-        </div>
-    </div>
-
-
-
-
-    <div class="parent">
-        <div></div>
-    </div>
-
-    <br><br><br><br><br>
-
-    <div class="testShape">
-        <img class="clip-svg" src="images/Harry-Potter-1-.jpg" alt="Harry Potter">
-
-        <svg width="0" height="0">
-            <defs>
-                <clipPath id="myClip">
-                    <circle cx="75%" cy="75%" r="100" />
-                    <circle cx="200" cy="100" r="80" />
-                    <rect  />
-                </clipPath>
-            </defs>
-        </svg>
-    </div>
-
+    <img class="mask-img example-mask" src="images/Far Cry® 52019-2-14-19-57-20.jpg" alt="Masked image">
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
