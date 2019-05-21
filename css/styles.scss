@@ -36,88 +36,79 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-.shapeTest2{
+.menuTest{
+  width: 20%;
+  height: 700px;
+  background-color: yellow;
   position: relative;
-  width: 35%;
-  background-color: red;
-  margin-left: auto;
+  display: block;
 
-  .shapeB, .shapeB:before, .shapeB:after{
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
+  .verticalFlex{
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-around;
+    list-style: none;
   }
 
-  .shapeB{
-    .side{
-      width: 45%;
-      height: 100%;
-      margin-left: auto;
-      background-color: #ffffff;
+  .flex{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+    list-style: none;
+    position: absolute;
+    bottom: 3%;
+    right: 0;
+    left: 0;
+
+    li{
+      width: 30%;
+      
+      .some{
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        list-style: none;
+        width: 100%;
+      }
     }
   }
-
-  .shapeB:before{
-    content: " ";
-    background-color: #ffffff;
-    clip-path: circle(25% at 55% 32%);
-
-  }
-
-  .shapeB:after{
-    content: " ";
-    background-color: #ffffff;
-    clip-path: circle(30% at 55% 100%);
-
-  }
-}
-
-.shapeTest2:before{
-  content: " ";
-  display: block;
-  padding-top: 65%;
-}
-
-
-
-
-
-.testShape{
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.clip-svg {
-  clip-path: url(#myClip);
-}
-
-.testShape2{
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.clip-svg2{
-  clip-path: url(#myClip2);
 }
 
 .example-mask {
-  mask-image: url(../images/Bonzai-B-test.svg);
   -webkit-mask-image: url(../images/Bonzai-B-test.svg);
-  mask-mode: alpha;
-  mask-repeat: no-repeat;
+  mask-image: url(../images/Bonzai-B-test.svg);
   -webkit-mask-repeat: no-repeat;
-  mask-size: 100%;
+  mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
-  mask-position: center;
-  -webkit-mask-position: center;
+  mask-size: 100%;
 }
 
+.secCurve1{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+}
 
+.curveTest{
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
 
+  path{
+    fill: #00f;
+  }
+}
+
+.secCurve2{
+  margin: 0;
+  padding: 0;
+  background-color: #00f;
+  width: 100%;
+  height: 100vh;
+}
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
