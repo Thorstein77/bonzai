@@ -28,6 +28,50 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+    <aside class="menuTest">
+        <img src="images/logoBlack.svg">
+
+        <ul class="verticalFlex">
+            <li>
+                <a>1</a>
+            </li>
+
+            <li>
+                <a>2</a>
+            </li>
+
+            <li>
+                <a>3</a>
+            </li>
+
+            <li>
+                <a>4</a>
+            </li>
+        </ul>
+
+        <ul class="flex">
+            <li>
+                <a>1</a>
+            </li>
+
+            <li>
+                <ul class="some">
+                    <li>
+                        <a>2</a>
+                    </li>
+
+                    <li>
+                        <a>3</a>
+                    </li>
+
+                    <li>
+                        <a>4</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
     <img class="mask-img example-mask" src="images/Far Cry® 52019-2-14-19-57-20.jpg" alt="Masked image">
 
     <section class="secCurve1">

@@ -28,53 +28,7 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-    <aside class="menuTest">
-        <img src="images/logoBlack.svg">
-
-        <ul class="verticalFlex">
-            <li>
-                <a>1</a>
-            </li>
-
-            <li>
-                <a>2</a>
-            </li>
-
-            <li>
-                <a>3</a>
-            </li>
-
-            <li>
-                <a>4</a>
-            </li>
-        </ul>
-
-        <ul class="flex">
-            <li>
-                <a>1</a>
-            </li>
-
-            <li>
-                <ul class="some">
-                    <li>
-                        <a>2</a>
-                    </li>
-
-                    <li>
-                        <a>3</a>
-                    </li>
-
-                    <li>
-                        <a>4</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </aside>
-
-
-
-
+    
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript"></script>
