@@ -28,7 +28,34 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-    
+    <main>
+        <header>
+
+
+
+
+        </header>
+
+
+
+
+        <section>
+            <svg class="curveTest" viewBox="0 0 1920.5 147.5">
+                <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
+            </svg>
+
+
+            <svg class="curveTest" viewBox="0 0 1920.5 147.5">
+                <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
+            </svg>
+        </section>
+
+
+
+        <section>
+
+        </section>
+    </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript"></script>
