@@ -28,6 +28,18 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+    <img class="mask-img example-mask" src="images/Far Cry® 52019-2-14-19-57-20.jpg" alt="Masked image">
+
+    <section class="secCurve1">
+        <svg class="curveTest" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.5 147.5">
+            <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
+        </svg>
+    </section>
+
+    <section class="secCurve2">
+
+    </section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript"></script>
 
