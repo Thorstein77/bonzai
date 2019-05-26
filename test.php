@@ -72,7 +72,7 @@
         </ul>
     </aside>
 
-    <img class="mask-img example-mask" src="images/Far Cry® 52019-2-14-19-57-20.jpg" alt="Masked image">
+    <img class="mask-img example-mask" src="images/farcry.jpg" alt="Masked image">
 
     <section class="secCurve1">
         <svg class="curveTest" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.5 147.5">
@@ -83,6 +83,19 @@
     <section class="secCurve2">
 
     </section>
+
+
+    <div class="testCut">
+         
+
+        <div class="testCutTop">
+
+        </div>
+
+        <div class="testCutBtm">
+
+        </div>
+    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript"></script>
