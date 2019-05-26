@@ -19,7 +19,10 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://use.fontawesome.com/97e05deb5f.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Sanchez&display=swap&subset=latin-ext" rel="stylesheet">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,43 +32,53 @@
 <body>
 
     <aside class="menuTest">
-        <img src="images/logoBlack.svg">
+        <div class="logoImg">
+            <img src="images/logoOffWhite.svg">
+        </div>
 
         <ul class="verticalFlex">
             <li>
-                <a>1</a>
+                <a>Ny hjemmeside</a>
             </li>
 
             <li>
-                <a>2</a>
+                <a>Cases / Referencer</a>
             </li>
 
             <li>
-                <a>3</a>
+                <a>Kontakt</a>
             </li>
 
             <li>
-                <a>4</a>
+                <a>Blog</a>
             </li>
         </ul>
 
         <ul class="flex">
-            <li>
-                <a>1</a>
+            <li class="teamIcon">
+                <a>
+                    <img src="images/teamviewer.png">
+                </a>
             </li>
 
-            <li>
-                <ul class="some">
+            <li class="someIcons">
+                <ul>
                     <li>
-                        <a>2</a>
+                        <a>
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
                     </li>
 
                     <li>
-                        <a>3</a>
+                        <a>
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
 
                     <li>
-                        <a>4</a>
+                        <a>
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </li>
                 </ul>
             </li>

@@ -5,7 +5,26 @@
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
 }
 
-body {
+// Variables
+
+
+// fonts
+$headlineFont: Sanchez, serif;
+$textFont: Quicksand, sans-serif;
+
+
+// colour
+$darkBlue: #006766;
+$midToneBlue: #66cdcc;
+$lightBlue: #9acccd;
+
+$deepOrange: #ff6500;
+$midToneOrange: #ff9934;
+
+$offWhite: #fffef9;
+
+
+        body {
   margin: 0; // Ingen kanter i siden af browser
 }
 
@@ -36,6 +55,9 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+
+
+
 header{
   height: 800px;
   width: 100%;
@@ -57,39 +79,85 @@ header{
 
 // testing code
 
-.menuTest{
-  width: 20%;
-  height: 700px;
-  background-color: yellow;
+.menu{
+  width: 27.5%;
+  height: 100vh;
+  background-color: $midToneBlue;
   position: relative;
   display: block;
+
+  color: $darkBlue;
+  font-family: $textFont;
+
+  font-size: 20pt;
+  line-height: 175%;
+
+  .logoImg{
+    width: 63%;
+    margin: 0 25% 0 12%;
+    padding: 20% 0 5%;
+  }
 
   .verticalFlex{
     display: flex;
     flex-flow: nowrap column;
     justify-content: space-around;
     list-style: none;
+
+    width: auto;
+    margin: 0 0 0 41.75%;
   }
 
   .flex{
     display: flex;
     flex-flow: nowrap row;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     position: absolute;
-    bottom: 3%;
-    right: 0;
-    left: 0;
+    bottom: 10%;
+    right: 21%;
+    left: 18.7%;
 
-    li{
-      width: 30%;
+    .teamIcon{
+      width: 50px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: end;
 
-      .some{
+    }
+
+    .someIcons{
+      width: 55%;
+
+      ul{
         display: flex;
         flex-flow: nowrap row;
         justify-content: space-between;
         list-style: none;
         width: 100%;
+
+        font-size: 41pt;
+
+        li{
+          padding: 0;
+          margin: 0;
+
+          a{
+            padding: 0;
+            margin: 0;
+
+            i{
+              padding: 0;
+              margin: 0;
+            }
+
+            i:before{
+              padding: 0;
+              margin: 0;
+
+            }
+          }
+        }
       }
     }
   }
@@ -166,6 +234,22 @@ header{
 }
 
 @media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+}
+
+@media screen and (min-width: 1366px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+}
+
+@media screen and (min-width: 1920px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+}
+
+@media screen and (min-width: 2560px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+}
+
+@media screen and (min-width: 3840px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 }
 
