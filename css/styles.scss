@@ -79,89 +79,105 @@ header{
 
 // testing code
 
-.menu{
-  width: 27.5%;
-  height: 100vh;
+.menuBack{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 94.234%;
+  z-index: 100;
+
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: space-around;
   background-color: $midToneBlue;
-  position: relative;
-  display: block;
 
-  color: $darkBlue;
-  font-family: $textFont;
+  font-size: 40pt;
+  color: $deepOrange;
 
-  font-size: 20pt;
-  line-height: 175%;
-
-  .logoImg{
-    width: 63%;
-    margin: 0 25% 0 12%;
-    padding: 20% 0 5%;
+  i{
+    margin: 0 auto;
   }
 
-  .verticalFlex{
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content: space-around;
-    list-style: none;
+  .menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -27.51%;
+    right: 100%;
+    background-color: $midToneBlue;
+    position: fixed;
+    display: block;
+    z-index: 101;
+    transition: 1s;
 
-    width: auto;
-    margin: 0 0 0 41.75%;
-  }
+    color: $darkBlue;
+    font-family: $textFont;
+    font-size: 20pt;
+    line-height: 175%;
 
-  .flex{
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-between;
-    list-style: none;
-    position: absolute;
-    bottom: 10%;
-    right: 21%;
-    left: 18.7%;
-
-    .teamIcon{
-      width: 50px;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: end;
-
+    .logoImg{
+      width: 63%;
+      margin: 0 25% 0 12%;
+      padding: 20% 0 5%;
     }
 
-    .someIcons{
-      width: 55%;
+    .verticalFlex{
+      display: flex;
+      flex-flow: nowrap column;
+      justify-content: space-around;
+      list-style: none;
 
-      ul{
+      width: auto;
+      margin: 0 0 0 41.75%;
+    }
+
+    .flex{
+      display: flex;
+      flex-flow: nowrap row;
+      justify-content: space-between;
+      list-style: none;
+      position: absolute;
+      bottom: 10%;
+      right: 21%;
+      left: 18.7%;
+
+      .teamIcon{
+        width: 50px;
         display: flex;
-        flex-flow: nowrap row;
-        justify-content: space-between;
-        list-style: none;
-        width: 100%;
+        flex-flow: column nowrap;
+        justify-content: end;
 
-        font-size: 41pt;
+      }
 
-        li{
-          padding: 0;
-          margin: 0;
+      .someIcons{
+        width: 55%;
 
-          a{
-            padding: 0;
-            margin: 0;
+        ul{
+          display: flex;
+          flex-flow: nowrap row;
+          justify-content: space-between;
+          list-style: none;
+          width: 100%;
 
-            i{
-              padding: 0;
-              margin: 0;
-            }
-
-            i:before{
-              padding: 0;
-              margin: 0;
-
-            }
-          }
+          font-size: 41pt;
         }
       }
     }
   }
 }
+
+.menuBack:hover{
+
+  .menu{
+
+
+    left: 0;
+    right: 72.5%;
+  }
+}
+
+
 
 .example-mask {
   -webkit-mask-image: url(../images/Bonzai-B-test.svg);
@@ -238,19 +254,19 @@ header{
 }
 
 @media screen and (min-width: 1366px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  // Alt der ændres i computer fra 1200px
 }
 
 @media screen and (min-width: 1920px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  // Alt der ændres i computer fra 1366px
 }
 
 @media screen and (min-width: 2560px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  // Alt der ændres i computer fra 1920px
 }
 
 @media screen and (min-width: 3840px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  // Alt der ændres i computer fra 2560px
 }
 
 @media print {
