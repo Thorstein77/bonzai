@@ -103,10 +103,9 @@ header{
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -27.51%;
-    right: 100%;
+    left: 0;
+    right: 72.5%;
     background-color: $midToneBlue;
-    position: fixed;
     display: block;
     z-index: 101;
     transition: 1s;
@@ -165,17 +164,32 @@ header{
       }
     }
   }
+
+  .menuNotAtTop{
+    left: -27.51%;
+    right: 100%;
+  }
+
+  .menuLoad{
+    transition: 0s !important;
+  }
 }
-
 .menuBack:hover{
-
   .menu{
-
-
-    left: 0;
+    left: 0 ;
     right: 72.5%;
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

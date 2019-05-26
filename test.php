@@ -33,7 +33,7 @@
     <aside class="menuBack">
         <i class="fas fa-chevron-right"></i>
 
-        <nav class="menu">
+        <nav class="menu menuLoad">
             <div class="logoImg">
                 <img src="images/logoOffWhite.svg">
             </div>
@@ -89,6 +89,7 @@
     </aside>
 
 
+
     <img class="mask-img example-mask" src="images/farcry.jpg" alt="Masked image">
 
     <section class="secCurve1">
@@ -115,11 +116,33 @@
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+<script>
 
-    $( window ).height();
+    $window = $(window);
+    $windowHeight = $window.height();
 
-    
+    $scrollDistance = $(document).scrollTop();
+
+    if( $windowHeight <= $scrollDistance ){
+        $(".menu").addClass("menuNotAtTop");
+    }if( $windowHeight > $scrollDistance ){
+        $(".menu").removeClass("menuNotAtTop");
+    }
+
+    $(document).scroll(function() {
+        $scrollDistance = $(document).scrollTop();
+
+        if( $windowHeight <= $scrollDistance ){
+            $(".menu").addClass("menuNotAtTop");
+        }if( $windowHeight > $scrollDistance ){
+            $(".menu").removeClass("menuNotAtTop");
+        }
+    });
+
+    $(document).ready(function(){
+        $(".menu").removeClass("menuLoad");
+    })
+
 </script>
 
 </body>
