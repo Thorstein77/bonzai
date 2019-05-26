@@ -131,6 +131,32 @@ header{
   height: 100vh;
 }
 
+.testCut{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+
+.testCutTop{
+  display: block;
+  position: relative;
+  background: url("../images/farcry.jpg") no-repeat center;   width: 100%;
+  height: 400px;
+  clip-path: url("../images/Bonzai-line-test3.svg");
+}
+
+.testCutBtm{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: red;
+  clip-path: url("../images/Bonzai-line-test3.svg");
+}
+
+
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 }
