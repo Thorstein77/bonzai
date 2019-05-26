@@ -30,60 +30,65 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
+    <aside class="menuBack">
+        <i class="fas fa-chevron-right"></i>
 
-    <aside class="menuTest">
-        <div class="logoImg">
-            <img src="images/logoOffWhite.svg">
-        </div>
+        <nav class="menu menuLoad">
+            <div class="logoImg">
+                <img src="images/logoOffWhite.svg">
+            </div>
 
-        <ul class="verticalFlex">
-            <li>
-                <a>Ny hjemmeside</a>
-            </li>
+            <ul class="verticalFlex">
+                <li>
+                    <a>Ny hjemmeside</a>
+                </li>
 
-            <li>
-                <a>Cases / Referencer</a>
-            </li>
+                <li>
+                    <a>Cases / Referencer</a>
+                </li>
 
-            <li>
-                <a>Kontakt</a>
-            </li>
+                <li>
+                    <a>Kontakt</a>
+                </li>
 
-            <li>
-                <a>Blog</a>
-            </li>
-        </ul>
+                <li>
+                    <a>Blog</a>
+                </li>
+            </ul>
 
-        <ul class="flex">
-            <li class="teamIcon">
-                <a>
-                    <img src="images/teamviewer.png">
-                </a>
-            </li>
+            <ul class="flex">
+                <li class="teamIcon">
+                    <a>
+                        <img src="images/teamviewer.png">
+                    </a>
+                </li>
 
-            <li class="someIcons">
-                <ul>
-                    <li>
-                        <a>
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
+                <li class="someIcons">
+                    <ul>
+                        <li>
+                            <a>
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a>
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
+                        <li>
+                            <a>
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a>
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+                        <li>
+                            <a>
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </aside>
+
+
 
     <img class="mask-img example-mask" src="images/farcry.jpg" alt="Masked image">
 
@@ -111,7 +116,34 @@
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript"></script>
+<script>
+
+    $window = $(window);
+    $windowHeight = $window.height();
+
+    $scrollDistance = $(document).scrollTop();
+
+    if( $windowHeight <= $scrollDistance ){
+        $(".menu").addClass("menuNotAtTop");
+    }if( $windowHeight > $scrollDistance ){
+        $(".menu").removeClass("menuNotAtTop");
+    }
+
+    $(document).scroll(function() {
+        $scrollDistance = $(document).scrollTop();
+
+        if( $windowHeight <= $scrollDistance ){
+            $(".menu").addClass("menuNotAtTop");
+        }if( $windowHeight > $scrollDistance ){
+            $(".menu").removeClass("menuNotAtTop");
+        }
+    });
+
+    $(document).ready(function(){
+        $(".menu").removeClass("menuLoad");
+    })
+
+</script>
 
 </body>
 </html>
