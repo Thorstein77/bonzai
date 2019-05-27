@@ -30,63 +30,37 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-    <aside class="menuBack">
-        <i class="fas fa-chevron-right"></i>
 
-        <nav class="menu menuLoad">
-            <div class="logoImg">
-                <img src="images/logoOffWhite.svg">
-            </div>
 
-            <ul class="verticalFlex">
-                <li>
-                    <a>Ny hjemmeside</a>
-                </li>
 
-                <li>
-                    <a>Cases / Referencer</a>
-                </li>
+    <main>
+        <header>
 
-                <li>
-                    <a>Kontakt</a>
-                </li>
 
-                <li>
-                    <a>Blog</a>
-                </li>
-            </ul>
 
-            <ul class="flex">
-                <li class="teamIcon">
-                    <a>
-                        <img src="images/teamviewer.png">
-                    </a>
-                </li>
 
-                <li class="someIcons">
-                    <ul>
-                        <li>
-                            <a>
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
+        </header>
 
-                        <li>
-                            <a>
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
 
-                        <li>
-                            <a>
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </aside>
+
+
+        <section>
+            <svg class="curveTest" viewBox="0 0 1920.5 147.5">
+                <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
+            </svg>
+
+
+            <svg class="curveTest" viewBox="0 0 1920.5 147.5">
+                <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
+            </svg>
+        </section>
+
+
+
+        <section>
+
+        </section>
+    </main>
 
 
 
@@ -118,30 +92,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 
-    $window = $(window);
-    $windowHeight = $window.height();
 
-    $scrollDistance = $(document).scrollTop();
-
-    if( $windowHeight <= $scrollDistance ){
-        $(".menu").addClass("menuNotAtTop");
-    }if( $windowHeight > $scrollDistance ){
-        $(".menu").removeClass("menuNotAtTop");
-    }
-
-    $(document).scroll(function() {
-        $scrollDistance = $(document).scrollTop();
-
-        if( $windowHeight <= $scrollDistance ){
-            $(".menu").addClass("menuNotAtTop");
-        }if( $windowHeight > $scrollDistance ){
-            $(".menu").removeClass("menuNotAtTop");
-        }
-    });
-
-    $(document).ready(function(){
-        $(".menu").removeClass("menuLoad");
-    })
 
 </script>
 
