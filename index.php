@@ -31,107 +31,140 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-    <aside class="menuBack">
-        <i class="fas fa-chevron-right"></i>
+<?php
+require ("php/menu.php");
+?>
 
-        <nav class="menu menuLoad">
-            <div class="logoImg">
-                <a href="index.php">
-                    <img src="images/logoOffWhite.svg">
-                </a>
+    <section class="">
+        <h1>placeholder</h1>
+
+        <p>tekst her</p>
+
+        <!-- inline svg -->
+    </section>
+
+    <section>
+        <div class="flex">
+            <div>
+                <h2>
+                    overskrift
+                </h2>
+
+                <p>tekst her</p>
             </div>
 
-            <ul class="verticalFlex">
-                <li>
-                    <a href="newWebsite.php">
-                        Ny hjemmeside
-                    </a>
-                </li>
+            <div class="grid">
+                <div>
+                    <img>
+                </div>
 
-                <li>
-                    <a href="cases.php">
-                        Cases / Referencer
-                    </a>
-                </li>
+                <div>
+                    <p>
+                        tekst her
+                    </p>
+                </div>
 
-                <li>
-                    <a href="contact.php">
-                        Kontakt
-                    </a>
-                </li>
+                <div>
+                    <img>
+                </div>
 
-                <li>
-                    <a href="blog.php">
-                        Blog
-                    </a>
-                </li>
-            </ul>
+                <div>
+                    <p>
+                        tekst her
+                    </p>
+                </div>
+            </div>
+        </div>
 
-            <ul class="flex">
-                <li class="teamIcon">
-                    <a>
-                        <img src="images/teamviewer.png">
-                    </a>
-                </li>
+        <h3>
+            overskrift
+        </h3>
 
-                <li class="someIcons">
-                    <ul>
-                        <li>
-                            <a href="https://da-dk.facebook.com/networkmediadk" target="_blank">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
+        <div class="grid">
+            <div>
+                <i></i>
 
-                        <li>
-                            <a href="https://www.instagram.com/networkmediadk/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
+                <p></p>
+            </div>
 
-                        <li>
-                            <a href="https://dk.linkedin.com/company/network-media-aps" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </aside>
+            <div>
+                <i></i>
 
-    <div class="indexTest">
+                <p></p>
+            </div>
 
-    </div>
+            <div>
+                <i></i>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+                <p></p>
+            </div>
 
-    $window = $(window);
-    $windowHeight = $window.height();
+            <div>
+                <i></i>
 
-    $scrollDistance = $(document).scrollTop();
+                <p></p>
+            </div>
 
-    if( $windowHeight <= $scrollDistance ){
-        $(".menu").addClass("menuNotAtTop");
-    }if( $windowHeight > $scrollDistance ){
-        $(".menu").removeClass("menuNotAtTop");
-    }
+            <div>
+                <i></i>
 
-    $(document).scroll(function() {
-        $scrollDistance = $(document).scrollTop();
+                <p></p>
+            </div>
 
-        if( $windowHeight <= $scrollDistance ){
-            $(".menu").addClass("menuNotAtTop");
-        }if( $windowHeight > $scrollDistance ){
-            $(".menu").removeClass("menuNotAtTop");
-        }
-    });
+            <div>
+                <i></i>
 
-    $(document).ready(function(){
-        $(".menu").removeClass("menuLoad");
-    })
+                <p></p>
+            </div>
 
-</script>
+            <div>
+                <i></i>
+
+                <p></p>
+            </div>
+
+            <div>
+                <i></i>
+
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>
+            overskrift
+        </h2>
+
+        <p>
+            tekst her
+        </p>
+
+        <div class="slide">
+
+        </div>
+    </section>
+
+    <section>
+        <img>
+
+        <div>
+            <h2>
+                overskrift
+            </h2>
+
+            <p>
+                tekst her
+            </p>
+        </div>
+    </section>
+
+<?php
+require ("php/footer.php");
+require ("php/javascript.php");
+?>
+
+
 
 </body>
 </html>
