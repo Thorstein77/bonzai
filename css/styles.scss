@@ -5,7 +5,26 @@
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
 }
 
-body {
+// Variables
+
+
+// fonts
+$headlineFont: Sanchez, serif;
+$textFont: Quicksand, sans-serif;
+
+
+// colour
+$darkBlue: #006766;
+$midToneBlue: #66cdcc;
+$lightBlue: #9acccd;
+
+$deepOrange: #ff6500;
+$midToneOrange: #ff9934;
+
+$offWhite: #fffef9;
+
+
+        body {
   margin: 0; // Ingen kanter i siden af browser
 }
 
@@ -36,6 +55,9 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+
+
+
 header{
   height: 800px;
   width: 100%;
@@ -45,6 +67,112 @@ header{
   position: relative;
 }
 
+.menuBack{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 94.234%;
+  z-index: 100;
+
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: space-around;
+  background-color: $midToneBlue;
+
+  font-size: 25pt;
+  color: $deepOrange;
+
+  i{
+    margin: 0 auto;
+  }
+
+  a{
+    text-decoration: none;
+    color: $darkBlue;
+  }
+
+  .menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 72.5%;
+    background-color: $midToneBlue;
+    display: block;
+    z-index: 101;
+    transition: 1s;
+
+    color: $darkBlue;
+    font-family: $textFont;
+    font-size: 20pt;
+    line-height: 175%;
+
+    .logoImg{
+      width: 63%;
+      margin: 0 25% 0 12%;
+      padding: 20% 0 5%;
+    }
+
+    .verticalFlex{
+      display: flex;
+      flex-flow: nowrap column;
+      justify-content: space-around;
+      list-style: none;
+
+      width: auto;
+      margin: 0 0 0 41.75%;
+    }
+
+    .flex{
+      display: flex;
+      flex-flow: nowrap row;
+      justify-content: space-between;
+      list-style: none;
+      position: absolute;
+      bottom: 10%;
+      right: 21%;
+      left: 18.7%;
+
+      .teamIcon{
+        width: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: end;
+
+      }
+
+      .someIcons{
+        width: 55%;
+
+        ul{
+          display: flex;
+          flex-flow: nowrap row;
+          justify-content: space-between;
+          list-style: none;
+          width: 100%;
+
+          font-size: 41pt;
+        }
+      }
+    }
+  }
+
+  .menuNotAtTop{
+    left: -27.51%;
+    right: 100%;
+  }
+
+  .menuLoad{
+    transition: 0s !important;
+  }
+}
+.menuBack:hover{
+  .menu{
+    left: 0 ;
+    right: 72.5%;
+  }
+}
 
 
 
@@ -57,43 +185,34 @@ header{
 
 // testing code
 
-.menuTest{
-  width: 20%;
-  height: 700px;
-  background-color: yellow;
-  position: relative;
-  display: block;
+.indexTest{
+  width: 100%;
+  height: 280vw;
 
-  .verticalFlex{
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content: space-around;
-    list-style: none;
-  }
-
-  .flex{
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-around;
-    list-style: none;
-    position: absolute;
-    bottom: 3%;
-    right: 0;
-    left: 0;
-
-    li{
-      width: 30%;
-
-      .some{
-        display: flex;
-        flex-flow: nowrap row;
-        justify-content: space-between;
-        list-style: none;
-        width: 100%;
-      }
-    }
-  }
+  background: url("../images/web-mock-up_index.jpg") no-repeat;
+  background-size: contain;
 }
+
+.newWebpageTest{
+  width: 100%;
+  height: 420vw;
+
+  background: url("../images/web-mock-up_ny.jpg") no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .example-mask {
   -webkit-mask-image: url(../images/Bonzai-B-test.svg);
@@ -167,6 +286,129 @@ header{
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+}
+
+@media screen and (min-width: 1366px) {
+  // Alt der ændres i computer fra 1200px
+}
+
+@media screen and (min-width: 1920px) {
+  // Alt der ændres i computer fra 1366px
+
+  .menuBack{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 94.234%;
+    z-index: 100;
+
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-around;
+    background-color: $midToneBlue;
+
+    font-size: 40pt;
+    color: $deepOrange;
+
+    i{
+      margin: 0 auto;
+    }
+
+    a{
+      text-decoration: none;
+      color: $darkBlue;
+    }
+
+    .menu{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 72.5%;
+      background-color: $midToneBlue;
+      display: block;
+      z-index: 101;
+      transition: 1s;
+
+      color: $darkBlue;
+      font-family: $textFont;
+      font-size: 20pt;
+      line-height: 175%;
+
+      .logoImg{
+        width: 63%;
+        margin: 0 25% 0 12%;
+        padding: 20% 0 5%;
+      }
+
+      .verticalFlex{
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: space-around;
+        list-style: none;
+
+        width: auto;
+        margin: 0 0 0 41.75%;
+      }
+
+      .flex{
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        list-style: none;
+        position: absolute;
+        bottom: 10%;
+        right: 21%;
+        left: 18.7%;
+
+        .teamIcon{
+          width: 50px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: end;
+
+        }
+
+        .someIcons{
+          width: 55%;
+
+          ul{
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-between;
+            list-style: none;
+            width: 100%;
+
+            font-size: 41pt;
+          }
+        }
+      }
+    }
+
+    .menuNotAtTop{
+      left: -27.51%;
+      right: 100%;
+    }
+
+    .menuLoad{
+      transition: 0s !important;
+    }
+  }
+  .menuBack:hover{
+    .menu{
+      left: 0 ;
+      right: 72.5%;
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  // Alt der ændres i computer fra 1920px
+}
+
+@media screen and (min-width: 3840px) {
+  // Alt der ændres i computer fra 2560px
 }
 
 @media print {

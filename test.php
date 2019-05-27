@@ -19,7 +19,10 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://use.fontawesome.com/97e05deb5f.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Sanchez&display=swap&subset=latin-ext" rel="stylesheet">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,49 +31,38 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-    <aside class="menuTest">
-        <img src="images/logoBlack.svg">
 
-        <ul class="verticalFlex">
-            <li>
-                <a>1</a>
-            </li>
 
-            <li>
-                <a>2</a>
-            </li>
+    <main>
+        <header>
 
-            <li>
-                <a>3</a>
-            </li>
 
-            <li>
-                <a>4</a>
-            </li>
-        </ul>
 
-        <ul class="flex">
-            <li>
-                <a>1</a>
-            </li>
 
-            <li>
-                <ul class="some">
-                    <li>
-                        <a>2</a>
-                    </li>
+        </header>
 
-                    <li>
-                        <a>3</a>
-                    </li>
 
-                    <li>
-                        <a>4</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </aside>
+
+
+        <section>
+            <svg class="curveTest" viewBox="0 0 1920.5 147.5">
+                <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
+            </svg>
+
+
+            <svg class="curveTest" viewBox="0 0 1920.5 147.5">
+                <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
+            </svg>
+        </section>
+
+
+
+        <section>
+
+        </section>
+    </main>
+
+
 
     <img class="mask-img example-mask" src="images/farcry.jpg" alt="Masked image">
 
@@ -98,7 +90,11 @@
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript"></script>
+<script>
+
+
+
+</script>
 
 </body>
 </html>
