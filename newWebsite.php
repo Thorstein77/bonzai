@@ -31,108 +31,16 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-    <aside class="menuBack">
-        <i class="fas fa-chevron-right"></i>
-
-        <nav class="menu menuLoad">
-            <div class="logoImg">
-                <a href="index.php">
-                    <img src="images/logoOffWhite.svg">
-                </a>
-            </div>
-
-            <ul class="verticalFlex">
-                <li>
-                    <a href="newWebsite.php">
-                        Ny hjemmeside
-                    </a>
-                </li>
-
-                <li>
-                    <a href="cases.php">
-                        Cases / Referencer
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.php">
-                        Kontakt
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog.php">
-                        Blog
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="flex">
-                <li class="teamIcon">
-                    <a>
-                        <img src="images/teamviewer.png">
-                    </a>
-                </li>
-
-                <li class="someIcons">
-                    <ul>
-                        <li>
-                            <a href="https://da-dk.facebook.com/networkmediadk" target="_blank">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.instagram.com/networkmediadk/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://dk.linkedin.com/company/network-media-aps" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </aside>
-
-    <div class="newWebpageTest">
-
-    </div>
+<?php
+require ("php/menu.php");
+?>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
 
-    $window = $(window);
-    $windowHeight = $window.height();
-
-    $scrollDistance = $(document).scrollTop();
-
-    if( $windowHeight <= $scrollDistance ){
-        $(".menu").addClass("menuNotAtTop");
-    }if( $windowHeight > $scrollDistance ){
-        $(".menu").removeClass("menuNotAtTop");
-    }
-
-    $(document).scroll(function() {
-        $scrollDistance = $(document).scrollTop();
-
-        if( $windowHeight <= $scrollDistance ){
-            $(".menu").addClass("menuNotAtTop");
-        }if( $windowHeight > $scrollDistance ){
-            $(".menu").removeClass("menuNotAtTop");
-        }
-    });
-
-    $(document).ready(function(){
-        $(".menu").removeClass("menuLoad");
-    })
-
-</script>
+<?php
+require ("php/footer.php");
+require ("php/javascript.php");
+?>
 
 </body>
 </html>
