@@ -192,64 +192,49 @@ require ("php/menu.php");
         </div>
 
         <div class="slide">
-            <div class="slideWindow">
-                <div id="carousel">
-                    <div class="slideObject" id="slideObject1">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
+            <div class="slideContainer">
+                <div id="slideLength">
+                    <div class="slideObject" id="firstSlideObject">
+                        1
                     </div>
 
-                    <div class="slideObject" id="slideObject2">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
+                    <div class="slideObject">
+                        2
                     </div>
 
-                    <div class="slideObject" id="slideObject3">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
+                    <div class="slideObject">
+                        3
                     </div>
 
-                    <div class="slideObject" id="slideObject4">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
+                    <div class="slideObject">
+                        4
                     </div>
 
-                    <div class="slideObject" id="slideObject5">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
-                    </div>
-
-                    <div class="slideObject" id="slideObject6">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
-                    </div>
-
-                    <div class="slideObject" id="slideObject7">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
-                    </div>
-
-                    <div class="slideObject" id="slideObject8">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
-                    </div>
-
-                    <div class="slideObject" id="slideObject9">
-                        <a>
-                            <img src="images/logos/av.png">
-                        </a>
+                    <div class="slideObject lastSlideObject">
+                        5
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+        <div class="genreSlide">
+            <div class="genreSlideMobile">
+                <div class="genreSlideObject">
+                    <div class="genre1-1"></div>
+                </div>
+
+                <div class="genreSlideObject">
+                    <div class="genre1-2"></div>
+                </div>
+
+                <div class="genreSlideObject">
+                    <div class="genre1-3"></div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="indexControl">
@@ -271,7 +256,6 @@ require ("php/menu.php");
 
             <p>
                 Skulle noget gå galt, kan du altid ringe eller skrive til os.
-
             </p>
 
             <p>
