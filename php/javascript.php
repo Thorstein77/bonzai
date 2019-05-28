@@ -26,6 +26,12 @@
         }
     });
 
+    var carousel = $('#carousel'),
+        threshold = 0,
+        slideWidth = 90,
+        dragStart,
+        dragEnd;
+
     $(document).ready(function(){
         $(".menu").removeClass("menuLoad");
     })
