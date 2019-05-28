@@ -55,18 +55,13 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-
-
-
 .headerMobile{
   position: fixed;
   top: 0;
   bottom: 90vh;
   left: 0;
   right: 0;
-
   background-color: $midToneBlue;
-
   .flex{
     display: flex;
     justify-content: space-between;
@@ -75,7 +70,6 @@ img {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-
     .burger{
       position: fixed;
       top: 0;
@@ -83,18 +77,15 @@ img {
       right: 110%;
       left: 120%;
     }
-
     .burgerMenu{
       font-size: 25pt;
       color: $darkBlue;
     }
-
     .logoMob{
       width: 30%;
     }
   }
 }
-
 .mobileMenu{
   position: fixed;
   top: 10vh;
@@ -104,11 +95,9 @@ img {
   transition: 500ms;
   background-color: $midToneBlue;
   font-family: $textFont;
-
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-
   a{
     text-decoration: none;
     color: $darkBlue;
@@ -116,7 +105,6 @@ img {
   li{
     list-style: none;
   }
-
   .verticalFlex{
     display: flex;
     flex-flow: nowrap column;
@@ -126,20 +114,16 @@ img {
     margin: 6vh auto 0 auto;
     font-size: 20pt;
   }
-
   .flex{
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
     align-items: center;
-
     width: 80%;
     margin: 0 auto 10vh auto;
-
     .teamIcon{
       width: 15%;
     }
-
     .someIcons{
       width: 55%;
       ul{
@@ -156,7 +140,6 @@ img {
   right: 0;
   left: 0;
 }
-
 .menuBack{
   display: none;
 }
@@ -170,22 +153,115 @@ img {
 
 
 
+footer{
+  width: 100%;
+  background-color: $lightBlue;
+
+  .footerGrid{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60% 35%;
+    grid-template-rows: 5fr 9fr;
+    grid-gap: 5%;
+
+    font-family: $textFont;
+
+    a{
+      color: $deepOrange;
+      text-decoration: none;
+    }
+
+    .footerContact{
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+
+      line-height: 1.5;
+      margin: 5vw 0 0 0;
+    }
+
+    .footerLinks{
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+
+      font-size: 16pt;
+
+      text-align: center;
+      margin: 5vw 0 0 0;
+
+      .footerSome{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        font-size: 23pt;
+      }
+    }
+
+    .footerNewsletter{
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+
+      text-align: center;
+
+      margin: 2vw 0 5vw 0;
+
+      form{
+
+        h4{
+          font-weight: normal;
+        }
+
+        input{
+          margin: 3vw 0 0 0;
+        }
+
+        .newsEmail{
+          width: 100%;
+          font-family: $textFont;
+          text-align: center;
+          height: 36px;
+          border: none;
+          background-color: $offWhite;
+        }
+
+        .newsButton{
+          font-family: $textFont;
+          font-weight: bold;
+          width: 60%;
+          padding: 8px;
+          font-size: 12pt;
+          border: none;
+          background-color: $deepOrange;
+          color: $offWhite;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // testing code
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .example-mask {
   -webkit-mask-image: url(../images/Bonzai-B-test.svg);

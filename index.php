@@ -35,10 +35,16 @@
 require ("php/menu.php");
 ?>
 
-    <section class="">
-        <h1>placeholder</h1>
+    <section>
+        <div>
+            <div></div>
 
-        <p>tekst her</p>
+            <div>
+                <h1>placeholder</h1>
+
+                <p>tekst her</p>
+            </div>
+        </div>
 
         <!-- inline svg -->
     </section>
@@ -129,6 +135,8 @@ require ("php/menu.php");
                 <p></p>
             </div>
         </div>
+
+        <!-- inline svg -->
     </section>
 
     <section>
