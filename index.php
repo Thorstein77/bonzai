@@ -194,7 +194,7 @@ require ("php/menu.php");
         <div class="slide">
             <div class="slideContainer">
                 <div id="slideLength">
-                    <div class="slideObject" id="firstSlideObject">
+                    <div class="slideObject">
                         1
                     </div>
 
@@ -210,31 +210,32 @@ require ("php/menu.php");
                         4
                     </div>
 
-                    <div class="slideObject lastSlideObject">
+                    <div class="slideObject">
                         5
                     </div>
+
+                    <div class="slideObject">
+                        6
+                    </div>
+
+                    <div class="slideObject">
+                        7
+                    </div>
+
+                    <div class="slideObject">
+                        8
+                    </div>
+
+                    <div class="slideObject">
+                        9
+                    </div>
+                </div>
+
+                <div id="slideDots">
+
                 </div>
             </div>
         </div>
-
-
-
-        <div class="genreSlide">
-            <div class="genreSlideMobile">
-                <div class="genreSlideObject">
-                    <div class="genre1-1"></div>
-                </div>
-
-                <div class="genreSlideObject">
-                    <div class="genre1-2"></div>
-                </div>
-
-                <div class="genreSlideObject">
-                    <div class="genre1-3"></div>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section class="indexControl">

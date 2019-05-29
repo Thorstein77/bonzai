@@ -323,10 +323,11 @@ img {
     width: 100%;
     color: black;
     position: relative;
+    text-align: center;
 
     .slideContainer{
-      width: 150px;
-      height: 15px;
+      width: 450px;
+      height: 35px;
       margin: 0 auto;
       overflow: hidden;
       position: relative;
@@ -342,6 +343,28 @@ img {
           width: 75px;
           height: 15px;
           position: relative;
+        }
+      }
+
+      #slideDots{
+        width: 100%;
+        height: 10px;
+        margin: 5px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        .dot{
+          width: 10px;
+          height: 10px;
+          margin: 0 2.5px;
+          border-radius: 50%;
+          background-color: #575757;
+
+        }
+
+        .active{
+          background-color: $offWhite;
         }
       }
     }
