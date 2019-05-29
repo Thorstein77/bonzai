@@ -31,57 +31,54 @@
 
 
         // Slideshow
-        var $slide = $("#slideLength");
-        $(".slideObject").first().addClass("firstSlideObject");
+        var slidesWidth = ($(".slideContainer").width() / $(".slideObject").width());
+        var slidesShown = Math.floor(slidesWidth);
         $(".slideObject").last().addClass("lastSlideObject");
-
         clone();
         function clone(){
-            $(".firstSlideObject").clone().appendTo("#slideLength");
+            var c;
+            for(c = 0; c < slidesShown; c++){
+                $(".slideObject:eq(" +c+ ")").clone().appendTo("#slideLength");
+            }
             $(".lastSlideObject").clone().prependTo("#slideLength");
         }
         var $slideObject = $(".slideObject");
         var position = 0;
         var objectWidth = $slideObject.outerWidth();
         var countObjects = $slideObject.length;
-
+        dots();
+        function dots(){
+            var i;
+            for(i = 0; i < (countObjects - (slidesShown + 1)); i++){
+                $("#slideDots").append("<div class='dot'></div>");
+            }
+        }
+        var dot = document.getElementsByClassName("dot");
+        $(".dot").first().addClass("firstDot");
+        $(".dot").last().addClass("lastDot");
         showSlides();
-
+        var n = 1;
         function showSlides(){
-            if(-(objectWidth * countObjects - objectWidth) === position - objectWidth){
+            if(-(objectWidth * countObjects - objectWidth) === position - (objectWidth * slidesShown)){
                 position = 0;
                 $slideObject.animate({
                     left: position+'px'
                 }, 0);
+                $(".dot").removeClass(" active");
+                $(".lastDot").addClass(" active");
+                n = 0;
             }else{
                 position = position - objectWidth;
                 $slideObject.animate({
                     left: position+'px'
                 }, 500);
+                $(".dot").removeClass(" active");
+                $(".dot:eq("+n+")").addClass(" active");
+                n++;
             }
-
             setTimeout(showSlides, 1000)
         }
-
-
-
-
-
-
-        //var slide = 0;
-        //showSlides();
-
-        //function showSlides() {
-            //var n;
-            //var slides = document.getElementsByClassName("slideObject");
-            //for (n = 0; n < slides.length; n++) {
-                //slides[n].style.display = "none";
-            //}
-            //slide++;
-            //if (slide > slides.length) {slide = 1}
-            //slides[slide-1].style.display = "block";
-            //setTimeout(showSlides, 500);
-        //}
+        $(".firstDot").addClass(" active");
     })
 
 </script>
