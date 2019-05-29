@@ -121,25 +121,25 @@ require ("php/menu.php");
                 <p>Tilfredshedsgaranti</p>
             </div>
 
-            <div class="gridObject blue">
+            <div class="gridObject blue" id="gridObject3">
                 <i class="fas fa-lock-open"></i>
 
                 <p>Administrator adgang</p>
             </div>
 
-            <div class="gridObject orange">
+            <div class="gridObject orange" id="gridObject4">
                 <i class="fas fa-laptop"></i>
 
                 <p>Nem administration</p>
             </div>
 
-            <div class="gridObject orange">
+            <div class="gridObject orange" id="gridObject5">
                 <i class="fas fa-hotel"></i>
 
                 <p>Webhotel inkluderet</p>
             </div>
 
-            <div class="gridObject blue">
+            <div class="gridObject blue"  id="gridObject6">
                 <i class="fab fa-wordpress"></i>
 
                 <p>Bygget på WordPress</p>
@@ -173,6 +173,8 @@ require ("php/menu.php");
     </section>
 
     <section class="indexExperience">
+        <div style="height: 1px"></div>
+
         <div class="indexExperienceInfo">
             <h2>
                 Erfarent webbureau
@@ -195,39 +197,39 @@ require ("php/menu.php");
             <div class="slideContainer">
                 <div id="slideLength">
                     <div class="slideObject">
-                        1
+                        <img src="images/logos/av.png">
                     </div>
 
                     <div class="slideObject">
-                        2
+                        <img src="images/logos/distinto.png">
                     </div>
 
                     <div class="slideObject">
-                        3
+                        <img src="images/logos/ethjem.png">
                     </div>
 
                     <div class="slideObject">
-                        4
+                        <img src="images/logos/gorms.png">
                     </div>
 
                     <div class="slideObject">
-                        5
+                        <img src="images/logos/hk.png">
                     </div>
 
                     <div class="slideObject">
-                        6
+                        <img src="images/logos/hp.png">
                     </div>
 
                     <div class="slideObject">
-                        7
+                        <img src="images/logos/netto.png">
                     </div>
 
                     <div class="slideObject">
-                        8
+                        <img src="images/logos/peugeot-1.png">
                     </div>
 
                     <div class="slideObject">
-                        9
+                        <img src="images/logos/sr.png">
                     </div>
                 </div>
 

@@ -29,6 +29,7 @@ $offWhite: #fffef9;
   border: none;
   background-color: $deepOrange;
   color: $offWhite;
+  border-radius: 10px;
 }
 
 body {
@@ -44,6 +45,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3{
   color: $darkBlue;
+}
+
+h2, h3{
+  font-size: 22pt;
 }
 
 ul, ol {
@@ -70,7 +75,7 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-// headerå
+// header
 
 .headerMobile{
   position: fixed;
@@ -174,32 +179,26 @@ img {
   display: block;
   width: 100%;
   margin: 10vh 0 0 0;
-
   .flex{
     width: 100%;
     display: flex;
-
     .menuPlacement{
       display: none;
     }
-
     .indexHeaderContent{
       width: 100%;
       text-align: right;
       padding: 30vw 5vw;
       background: url("../images/banner-index.jpg") no-repeat center;
       background-size: cover;
-
       h1{
         font-size: 15pt;
       }
-
       p{
         margin-top: 10px;
       }
     }
   }
-
   svg{
     position: absolute;
     bottom: -1px;
@@ -217,36 +216,30 @@ img {
   display: block;
   position: relative;
   width: 100%;
-
+  margin: 10vw 0 0;
   .flex{
     display: block;
     width: 90%;
     margin: 0 auto;
-
     .indexSolutionsInfo{
-
-
       p{
         margin-bottom: 10px;
       }
     }
-
     .grid{
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr auto;
       grid-gap: 5vw;
-
+      margin: 10vw 0;
       width: 100%;
     }
   }
-
   h3{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
   }
-
   .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -254,10 +247,8 @@ img {
     grid-column-gap: 5vw;
     grid-row-gap: 5vw;
     width: 90%;
-
-    margin: 0 auto;
+    margin: 0 auto 20vw;
     padding: 0;
-
     .gridObject{
       color: $offWhite;
       font-weight: bold;
@@ -266,29 +257,24 @@ img {
       justify-content: center;
       align-items: center;
       text-align: center;
-
       height: 30vw;
-
       i{
         font-size: 25pt;
       }
-
       p{
         margin: 5px 0 0 0;
       }
     }
-
     .orange{
       background-color: $midToneOrange;
     }
-
     .blue{
       background-color: $lightBlue;
     }
   }
   svg{
     position: absolute;
-    bottom: -1px;
+    bottom: -20.1vw;
     left: 0;
     right: 0;
     z-index: 10;
@@ -303,66 +289,60 @@ img {
   width: 100%;
   background-color: $darkBlue;
   color: $lightBlue;
-
   h2{
     color: $lightBlue;
+    margin-bottom: 2vw;
   }
-
   a{
     font-weight: bold;
     color: $offWhite;
   }
-
   .indexExperienceInfo{
     width: 90%;
-    margin: 0 auto;
+    margin: 10vw auto;
   }
-
+  p{
+    margin-top: 10px;
+  }
   .slide{
     background-color: $lightBlue;
     width: 100%;
     color: black;
     position: relative;
     text-align: center;
-
     .slideContainer{
-      width: 450px;
-      height: 35px;
-      margin: 0 auto;
+      width: 90vw;
+      margin: 10vw auto;
       overflow: hidden;
       position: relative;
 
       #slideLength{
         width: 10000px;
-        height: 15px;
+        height: 90%;
         display: flex;
         flex-direction: row;
         overflow: hidden;
-
         .slideObject{
-          width: 75px;
-          height: 15px;
+          width: 45vw;
+          padding: 2.5vw;
           position: relative;
         }
       }
-
       #slideDots{
         width: 100%;
-        height: 10px;
-        margin: 5px 0;
+        height: 10%;
+        padding: 5px 0;
+        margin-bottom: 5vw;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
-
         .dot{
           width: 10px;
           height: 10px;
           margin: 0 2.5px;
           border-radius: 50%;
-          background-color: #575757;
-
+          background-color: #a9a9a9;
         }
-
         .active{
           background-color: $offWhite;
         }
@@ -370,21 +350,14 @@ img {
     }
   }
 }
-
-
-
-
-
-
-
-
-
 .indexControl{
   width: 100%;
-
  .indexControlInfo{
    width: 90%;
-   margin: 0 auto;
+   margin: 0 auto 5vw;
+   p{
+     margin-top: 10px;
+   }
  }
 }
 
@@ -458,6 +431,7 @@ footer{
           height: 36px;
           border: none;
           background-color: $offWhite;
+          border-radius: 10px;
         }
         .newsButton{
           @include orangeButton;
@@ -557,6 +531,181 @@ footer{
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  h2, h3{
+    font-size: 30pt;
+  }
+  .headerMobile{
+    .flex{
+      .burgerMenu{
+        font-size: 35pt;
+      }
+      .logoMob{
+        width: 25%;
+      }
+    }
+  }
+  .mobileMenu{
+    .flex{
+      .teamIcon{
+        width: 7%;
+      }
+      .someIcons{
+        width: 30%;
+      }
+    }
+  }
+  .indexHeader{
+    .flex{
+      .indexHeaderContent{
+        h1{
+          font-size: 30pt;
+        }
+        p{
+          font-size: 22pt;
+        }
+      }
+    }
+  }
+  .indexSolutions{
+    .flex{
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+      .indexSolutionsInfo{
+        width: 45%;
+        p{
+          margin-bottom: 10px;
+        }
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0;
+        width: 50%;
+      }
+    }
+    h3{
+      width: 100%;
+    }
+    .grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+      width: 90%;
+      margin: 20px auto 12vw;
+      .gridObject{
+        height: 20vw;
+        p{
+          font-size: 11pt;
+        }
+      }
+      #gridObject3{
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      #gridObject4{
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      #gridObject5{
+        grid-area: 1 / 3 / 2 / 4;
+      }
+      #gridObject6{
+        grid-area: 1 / 4 / 2 / 5;
+      }
+    }
+    svg{
+      bottom: -12.1vw;
+    }
+  }
+  .indexExperience{
+    .indexExperienceInfo{
+      width: 55%;
+    }
+    .slide{
+      .slideContainer{
+        margin: 0 auto;
+        #slideLength{
+          .slideObject{
+            width: 30vw;
+          }
+        }
+        #slideDots{
+          margin-bottom: 20px;
+          .dot {
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  .indexControl{
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+
+    .indexControlInfo{
+      width: 45%;
+      margin: 30px 0;
+      padding: 0 5% 0 0;
+    }
+    img{
+      width: 50%;
+      max-height: 55vw;
+      -webkit-mask-image: url(../images/svg/bNormal.svg);
+      mask-image: url(../images/svg/bNormal.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100%;
+      mask-size: 100%;
+    }
+  }
+  footer{
+    .footerGrid{
+      grid-template-rows: 1fr 2fr;
+      grid-gap: 20px;
+      font-size: 20pt;
+      a{
+        color: $deepOrange;
+        text-decoration: none;
+      }
+      .footerContact{
+        font-size: 16pt;
+        a{
+          font-size: 18pt;
+        }
+        p{
+          font-size: 16pt;
+        }
+      }
+      .footerLinks{
+        font-size: 30pt;
+        .footerSome{
+          font-size: 30pt;
+
+        }
+      }
+      .footerNewsletter{
+        form{
+          h4{
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .newsEmail{
+            width: 60%;
+          }
+          .newsButton{
+            @include orangeButton;
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -566,6 +715,254 @@ footer{
   }
   .mobileMenu{
     display: none;
+  }
+  .menuBack{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 94.234%;
+    z-index: 100;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-around;
+    background-color: $midToneBlue;
+    font-size: 25pt;
+    color: $deepOrange;
+    i{
+      margin: 0 auto;
+    }
+    a{
+      text-decoration: none;
+      color: $offWhite;
+    }
+    .menu{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 72.5%;
+      background-color: $midToneBlue;
+      display: block;
+      z-index: 101;
+      transition: 1s;
+      color: $offWhite;
+      font-weight: bold;
+      font-family: $textFont;
+      font-size: 13pt;
+      line-height: 175%;
+      .logoImg{
+        width: 63%;
+        margin: 0 25% 0 12%;
+        padding: 20% 0 5%;
+      }
+      .verticalFlex{
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: space-around;
+        list-style: none;
+        width: auto;
+        margin: 0 0 0 41.75%;
+      }
+      .flex{
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        list-style: none;
+        position: absolute;
+        bottom: 10%;
+        right: 21%;
+        left: 18.7%;
+        .teamIcon{
+          width: 32px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+        }
+        .someIcons{
+          width: 65%;
+          ul{
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-between;
+            list-style: none;
+            width: 100%;
+            font-size: 26pt;
+          }
+          a{
+            color: $deepOrange;
+          }
+        }
+      }
+    }
+    .menuNotAtTop{
+      left: -27.51%;
+      right: 100%;
+    }
+    .menuLoad{
+      transition: 0s !important;
+    }
+  }
+  .menuBack:hover{
+    .menu{
+      left: 0 ;
+      right: 72.5%;
+    }
+  }
+  .indexHeader{
+    width: 94.234vw;
+    margin: 0 0 0 auto;
+    .flex{
+      display: block;
+      .menuPlacement{
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 21.746vw;
+        background-color: $midToneBlue;
+      }
+      .indexHeaderContent{
+        width: 72.4879vw;
+        padding: 30vw 0;
+        margin: 0 0 0 auto;
+
+        h1{
+          padding-right: 5%;
+        }
+        p{
+          padding-right: 5%;
+        }
+      }
+    }
+  }
+  .indexSolutions{
+    width: 94.234vw;
+    margin: 10vw 0 0 auto;
+    .flex{
+      margin-bottom: 5vw;
+      .indexSolutionsInfo{
+        p{
+          font-size: 12pt;
+        }
+      }
+      .grid{
+        grid-template-rows: 1fr auto;
+        p{
+          font-size: 12pt;
+        }
+      }
+    }
+    .grid{
+      margin: 20px auto 15vw;
+      .gridObject{
+        height: 20vw;
+        p{
+          font-size: 12pt;
+        }
+      }
+    }
+    svg{
+      bottom: -15.1vw;
+    }
+  }
+  .indexExperience{
+    width: 94.234vw;
+    margin: 0 0 0 auto;
+    .indexExperienceInfo{
+      width: 40%;
+      p{
+        font-size: 12pt;
+      }
+    }
+    .slide{
+      .slideContainer{
+        margin: 0 auto;
+        #slideLength{
+          .slideObject{
+            width: 22.5vw;
+          }
+        }
+        #slideDots{
+          margin-bottom: 20px;
+          .dot {
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  .indexControl{
+    width: 94.234vw;
+    margin: 0 0 0 auto;
+    .indexControlInfo{
+      width: 45%;
+      margin: 30px 0;
+      padding: 5vw 5% 0 0;
+      p{
+        font-size: 12pt;
+      }
+    }
+    img{
+      width: 50%;
+      max-height: 52vw;
+      -webkit-mask-image: url(../images/svg/bNormal.svg);
+      mask-image: url(../images/svg/bNormal.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100%;
+      mask-size: 100%;
+    }
+  }
+  footer{
+    width: 94.234vw;
+    margin: 0 0 0 auto;
+    .footerGrid{
+      grid-template-columns: 2fr 1fr 2fr;
+      grid-template-rows: 1fr;
+      grid-gap: 5%;
+      font-size: 15pt;
+      a{
+        color: $deepOrange;
+        text-decoration: none;
+      }
+      .footerContact{
+        font-size: 15pt;
+        a{
+          font-size: 15pt;
+        }
+        p{
+          font-size: 15pt;
+        }
+      }
+      .footerLinks{
+        font-size: 20pt;
+        .footerSome{
+          font-size: 25pt;
+        }
+      }
+      .footerNewsletter{
+        grid-area: 1 / 3 / 2 / 4;
+        margin-top: 5vw;
+        form{
+          h4{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .newsEmail{
+            width: 100%;
+          }
+          .newsButton{
+            @include orangeButton;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -599,7 +996,6 @@ footer{
       text-decoration: none;
       color: $darkBlue;
     }
-
     .menu{
       position: fixed;
       top: 0;

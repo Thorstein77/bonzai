@@ -31,7 +31,7 @@
 
 
         // Slideshow
-        var slidesWidth = ($(".slideContainer").width() / $(".slideObject").width());
+        var slidesWidth = ($(".slideContainer").outerWidth() / $(".slideObject").outerWidth());
         var slidesShown = Math.floor(slidesWidth);
         $(".slideObject").last().addClass("lastSlideObject");
         clone();
@@ -59,7 +59,7 @@
         showSlides();
         var n = 1;
         function showSlides(){
-            if(-(objectWidth * countObjects - objectWidth) === position - (objectWidth * slidesShown)){
+            if(-(objectWidth * countObjects - objectWidth) >= position - (objectWidth * slidesShown)){
                 position = 0;
                 $slideObject.animate({
                     left: position+'px'
@@ -76,7 +76,7 @@
                 $(".dot:eq("+n+")").addClass(" active");
                 n++;
             }
-            setTimeout(showSlides, 1000)
+            setTimeout(showSlides, 2000)
         }
         $(".firstDot").addClass(" active");
     })
