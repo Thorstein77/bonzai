@@ -442,7 +442,7 @@ img {
         border: $darkBlue 2px solid;
         padding: 8px;
         background-color: $offWhite;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
       }
       select{
 
@@ -451,7 +451,7 @@ img {
         background-color: $deepOrange;
         color: $offWhite;
         border: $deepOrange 2px solid;
-        width: 80%;
+        width: 40%;
       }
     }
   }
@@ -898,14 +898,11 @@ footer{
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
-
   //mixins
-
   @mixin webPush(){
     width: 94.234vw;
     margin: 0 0 0 auto;
   }
-
   @mixin header992(){
     @include webPush;
     .flex{
@@ -933,7 +930,6 @@ footer{
       }
     }
   }
-
   .headerMobile{
     display: none;
   }
@@ -1124,11 +1120,23 @@ footer{
   }
   .contactInfo{
     @include webPush;
+    .flex{
+      .info{
+        p{
+          font-size: 12pt;
+        }
+      }
+    }
   }
   .contactLocation{
     @include webPush;
     .flex{
-      
+      .location{
+        margin-top: 22vw;
+        p{
+          font-size: 12pt;
+        }
+      }
     }
   }
   footer{
@@ -1212,6 +1220,25 @@ footer{
       }
     }
   }
+  .contactHeader{
+    @include header1200;
+  }
+  .contactInfo{
+    .flex{
+      margin: 5vw auto;
+    }
+  }
+  .contactLocation{
+    .flex{
+      .location{
+        width: 33%;
+        margin: 15vw auto 0 5%;
+      }
+      .mapSize{
+        padding-top: 40%;
+      }
+    }
+  }
   footer{
     .footerGrid{
       .footerLinks{
@@ -1275,6 +1302,35 @@ footer{
   .indexControl{
     .indexControlInfo{
       padding: 8vw 13% 0 0;
+    }
+  }
+  .contactHeader{
+    .flex{
+      .headerContent{
+        form{
+
+        }
+      }
+    }
+  }
+  .contactInfo{
+
+    .flex{
+      .info{
+        p{
+
+        }
+      }
+    }
+  }
+  .contactLocation{
+    .flex{
+      .location{
+
+        p{
+
+        }
+      }
     }
   }
   footer{
