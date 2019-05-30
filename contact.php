@@ -29,6 +29,12 @@ require ("php/menu.php");
                 <h1>Tag kontakt!</h1>
 
                 <p>Hvis du er interesseret i en hjemmeside fra os,<br>eller har brug for support</p>
+
+                <form>
+                    <input type="email" placeholder="E-mail" name="email" required class="newsEmail">
+
+                    <input type="submit" value="Tilmeld nyhedsbrev" class="newsButton">
+                </form>
             </div>
         </div>
 
@@ -84,7 +90,7 @@ require ("php/menu.php");
                     <input type="text" class="contactPhone" id="contactPhone" name="contactPhone" placeholder="Telefon nr.">
 
                     <select required>
-                        <option value="" disabled selected hidden style="color: gray">
+                        <option value="" disabled selected hidden>
                             Vælg emne
                         </option>
 
@@ -134,7 +140,9 @@ require ("php/menu.php");
                 </p>
             </div>
 
-            <div class="map" id="googleMap"></div>
+            <div class="mapSize">
+                <div class="map" id="googleMap"></div>
+            </div>
         </div>
     </section>
 
