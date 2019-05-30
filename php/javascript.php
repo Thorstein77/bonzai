@@ -82,3 +82,15 @@
     })
 
 </script>
+
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(55.639614,12.084784),
+            zoom:17,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5edFMHjjsQfptoPzIVLDpHPLIvBfxyjY&callback=myMap"></script>
