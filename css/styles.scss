@@ -32,6 +32,44 @@ $offWhite: #fffef9;
   border-radius: 10px;
 }
 
+@mixin header(){
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 10vh 0 0 0;
+  .flex{
+    width: 100%;
+    display: flex;
+    .menuPlacement{
+      display: none;
+    }
+    .headerContent{
+      width: 100%;
+      text-align: right;
+      padding: 30vw 5vw;
+      background-size: cover;
+      h1{
+        font-size: 15pt;
+      }
+      p{
+        margin-top: 10px;
+      }
+    }
+  }
+  svg{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    g{
+      path{
+        fill: $offWhite;
+      }
+    }
+  }
+}
+
 body {
   margin: 0; // Ingen kanter i siden af browser
   background-color: $offWhite;
@@ -175,40 +213,11 @@ img {
 // index
 
 .indexHeader{
-  position: relative;
-  display: block;
-  width: 100%;
-  margin: 10vh 0 0 0;
+  @include header;
   .flex{
-    width: 100%;
-    display: flex;
-    .menuPlacement{
-      display: none;
-    }
-    .indexHeaderContent{
-      width: 100%;
-      text-align: right;
-      padding: 30vw 5vw;
+    .headerContent{
       background: url("../images/banner-index.jpg") no-repeat center;
       background-size: cover;
-      h1{
-        font-size: 15pt;
-      }
-      p{
-        margin-top: 10px;
-      }
-    }
-  }
-  svg{
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    g{
-      path{
-        fill: $offWhite;
-      }
     }
   }
 }
@@ -252,12 +261,22 @@ img {
     .gridObject{
       color: $offWhite;
       font-weight: bold;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 30vw;
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
+      div{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
       i{
         font-size: 25pt;
       }
@@ -274,7 +293,7 @@ img {
   }
   svg{
     position: absolute;
-    bottom: -20.1vw;
+    bottom: -20.2vw;
     left: 0;
     right: 0;
     z-index: 10;
@@ -361,10 +380,56 @@ img {
  }
 }
 
+// contact
 
+.contactHeader{
+  @include header;
+  .flex{
+    .headerContent{
+      background: url("../images/banner-contact.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+.contactInfo{
+  width: 100%;
 
+  .flex{
+    width: 90%;
+    margin: 10vw auto;
+    display: flex;
+    flex-flow: column nowrap;
 
+    .info{
+      p{
+        margin-bottom: 10px;
+      }
+    }
 
+    .contactForm{
+      width: 100%;
+
+      input, select, textarea{
+        width: 100%;
+        font-family: $textFont;
+        border-radius: 8px;
+        border-color: $darkBlue;
+
+        padding: 8px;
+        background-color: $offWhite;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+.contactLocation{
+  background-color: $midToneOrange;
+  svg{
+    path{
+      fill: $offWhite;
+    }
+  }
+}
 
 
 // footer
@@ -531,6 +596,20 @@ footer{
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+  @mixin header768(){
+    .flex{
+      .headerContent{
+        h1{
+          font-size: 30pt;
+        }
+        p{
+          font-size: 22pt;
+        }
+      }
+    }
+  }
+
   h2, h3{
     font-size: 30pt;
   }
@@ -555,16 +634,7 @@ footer{
     }
   }
   .indexHeader{
-    .flex{
-      .indexHeaderContent{
-        h1{
-          font-size: 30pt;
-        }
-        p{
-          font-size: 22pt;
-        }
-      }
-    }
+    @include header768;
   }
   .indexSolutions{
     .flex{
@@ -596,7 +666,6 @@ footer{
       width: 90%;
       margin: 20px auto 12vw;
       .gridObject{
-        height: 20vw;
         p{
           font-size: 11pt;
         }
@@ -710,6 +779,42 @@ footer{
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  //mixins
+
+  @mixin webPush(){
+    width: 94.234vw;
+    margin: 0 0 0 auto;
+  }
+
+  @mixin header992(){
+    @include webPush;
+    .flex{
+      display: block;
+      .menuPlacement{
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 21.746vw;
+        background-color: $midToneBlue;
+      }
+      .headerContent{
+        width: 72.4879vw;
+        padding: 30vw 0;
+        margin: 0 0 0 auto;
+
+        h1{
+          padding-right: 5%;
+        }
+        p{
+          padding-right: 5%;
+        }
+      }
+    }
+  }
+
   .headerMobile{
     display: none;
   }
@@ -810,38 +915,12 @@ footer{
     }
   }
   .indexHeader{
-    width: 94.234vw;
-    margin: 0 0 0 auto;
-    .flex{
-      display: block;
-      .menuPlacement{
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 21.746vw;
-        background-color: $midToneBlue;
-      }
-      .indexHeaderContent{
-        width: 72.4879vw;
-        padding: 30vw 0;
-        margin: 0 0 0 auto;
-
-        h1{
-          padding-right: 5%;
-        }
-        p{
-          padding-right: 5%;
-        }
-      }
-    }
+    @include header992;
   }
   .indexSolutions{
-    width: 94.234vw;
-    margin: 10vw 0 0 auto;
+    @include webPush;
     .flex{
-      margin-bottom: 5vw;
+      margin: 10vw 0 5vw 5vw;
       .indexSolutionsInfo{
         p{
           font-size: 12pt;
@@ -857,7 +936,6 @@ footer{
     .grid{
       margin: 20px auto 15vw;
       .gridObject{
-        height: 20vw;
         p{
           font-size: 12pt;
         }
@@ -868,10 +946,9 @@ footer{
     }
   }
   .indexExperience{
-    width: 94.234vw;
-    margin: 0 0 0 auto;
+    @include webPush;
     .indexExperienceInfo{
-      width: 40%;
+      width: 45%;
       p{
         font-size: 12pt;
       }
@@ -896,8 +973,7 @@ footer{
     }
   }
   .indexControl{
-    width: 94.234vw;
-    margin: 0 0 0 auto;
+    @include webPush;
     .indexControlInfo{
       width: 45%;
       margin: 30px 0;
@@ -918,8 +994,7 @@ footer{
     }
   }
   footer{
-    width: 94.234vw;
-    margin: 0 0 0 auto;
+    @include webPush;
     .footerGrid{
       grid-template-columns: 2fr 1fr 2fr;
       grid-template-rows: 1fr;
@@ -968,112 +1043,110 @@ footer{
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  @mixin header1200(){
+    .flex{
+      .headerContent{
+        padding: 35vh 0;
+      }
+    }
+  }
+
+  .indexHeader{
+    @include header1200;
+  }
+  .indexSolutions{
+    .grid{
+      width: 80%;
+    }
+  }
+  .indexExperience{
+    .slide{
+      .slideContainer{
+        #slideLength{
+          .slideObject{
+            width: 15vw;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .footerGrid{
+      .footerLinks{
+        max-width: 200px;
+        font-size: 25pt;
+        .footerSome{
+          font-size: 30pt;
+        }
+      }
+      .footerNewsletter{
+        grid-area: 1 / 3 / 2 / 4;
+        margin-top: 5vw;
+        form{
+          h4{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .newsEmail{
+            width: 100%;
+          }
+          .newsButton{
+            @include orangeButton;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1366px) {
   // Alt der ændres i computer fra 1200px
   .menuBack{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 94.234%;
-    z-index: 100;
-
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content: space-around;
-    background-color: $midToneBlue;
-
     font-size: 25pt;
-    color: $deepOrange;
-
-    i{
-      margin: 0 auto;
-    }
-
-    a{
-      text-decoration: none;
-      color: $darkBlue;
-    }
     .menu{
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 72.5%;
-      background-color: $midToneBlue;
-      display: block;
-      z-index: 101;
-      transition: 1s;
-
-      color: $darkBlue;
-      font-family: $textFont;
       font-size: 17pt;
-      line-height: 175%;
-
-      .logoImg{
-        width: 63%;
-        margin: 0 25% 0 12%;
-        padding: 20% 0 5%;
-      }
-
-      .verticalFlex{
-        display: flex;
-        flex-flow: nowrap column;
-        justify-content: space-around;
-        list-style: none;
-
-        width: auto;
-        margin: 0 0 0 41.75%;
-      }
-
       .flex{
-        display: flex;
-        flex-flow: nowrap row;
-        justify-content: space-between;
-        list-style: none;
-        position: absolute;
-        bottom: 10%;
-        right: 21%;
-        left: 18.7%;
-
         .teamIcon{
           width: 32px;
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: center;
         }
-
         .someIcons{
           width: 55%;
-
           ul{
-            display: flex;
-            flex-flow: nowrap row;
-            justify-content: space-between;
-            list-style: none;
-            width: 100%;
-
             font-size: 28pt;
           }
         }
       }
     }
-
-    .menuNotAtTop{
-      left: -27.51%;
-      right: 100%;
-    }
-
-    .menuLoad{
-      transition: 0s !important;
+  }
+  .indexSolutions{
+    .grid{
+      width: 70%;
     }
   }
-  .menuBack:hover{
-    .menu{
-      left: 0 ;
-      right: 72.5%;
+  .indexExperience{
+    .indexExperienceInfo{
+      width: 35%;
+    }
+  }
+  .indexControl{
+    .indexControlInfo{
+      padding: 8vw 13% 0 0;
+    }
+  }
+  footer{
+    .footerGrid{
+      .footerNewsletter{
+        form{
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }
@@ -1081,125 +1154,71 @@ footer{
 @media screen and (min-width: 1920px) {
   // Alt der ændres i computer fra 1366px
 
-  body{
-    max-width: 1920px;
-    margin: 0 auto;
+  @mixin header1920(){
+    .flex{
+      .headerContent{
+        padding: 40vh 0;
+      }
+    }
   }
 
   .menuBack{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 94.234%;
-    z-index: 100;
-
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content: space-around;
-    background-color: $midToneBlue;
-
     font-size: 40pt;
-    color: $deepOrange;
-
-    i{
-      margin: 0 auto;
-    }
-
-    a{
-      text-decoration: none;
-      color: $darkBlue;
-    }
-
     .menu{
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 72.5%;
-      background-color: $midToneBlue;
-      display: block;
-      z-index: 101;
-      transition: 1s;
-
-      color: $darkBlue;
-      font-family: $textFont;
       font-size: 20pt;
-      line-height: 175%;
-
-      .logoImg{
-        width: 63%;
-        margin: 0 25% 0 12%;
-        padding: 20% 0 5%;
-      }
-
-      .verticalFlex{
-        display: flex;
-        flex-flow: nowrap column;
-        justify-content: space-around;
-        list-style: none;
-
-        width: auto;
-        margin: 0 0 0 41.75%;
-      }
-
       .flex{
-        display: flex;
-        flex-flow: nowrap row;
-        justify-content: space-between;
-        list-style: none;
-        position: absolute;
-        bottom: 10%;
-        right: 21%;
-        left: 18.7%;
-
         .teamIcon{
           width: 50px;
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: end;
-
         }
-
         .someIcons{
-          width: 55%;
-
           ul{
-            display: flex;
-            flex-flow: nowrap row;
-            justify-content: space-between;
-            list-style: none;
-            width: 100%;
-
             font-size: 41pt;
           }
         }
       }
     }
-
-    .menuNotAtTop{
-      left: -27.51%;
-      right: 100%;
+  }
+  .indexHeader{
+    @include header1920;
+  }
+  .indexSolutions{
+    margin: 8vw 0 0 auto;
+    .flex{
+      width: 70%;
     }
-
-    .menuLoad{
-      transition: 0s !important;
+    .grid{
+      margin: 20px auto 10vw;
+    }
+    svg{
+      bottom: -10.1vw;
     }
   }
-  .menuBack:hover{
-    .menu{
-      left: 0 ;
-      right: 72.5%;
+  .indexExperience{
+    .indexExperienceInfo{
+      width: 25%;
+      margin: 5vw auto;
+    }
+  }
+  .indexControl{
+    .indexControlInfo{
+      padding: 11vw 21% 0 0;
+    }
+  }
+  footer{
+    .footerGrid{
+      .footerNewsletter{
+        form{
+          input {
+            margin: 1vw 0 0 0;
+          }
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 2560px) {
   // Alt der ændres i computer fra 1920px
-}
-
-@media screen and (min-width: 3840px) {
-  // Alt der ændres i computer fra 2560px
 }
 
 @media print {

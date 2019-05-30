@@ -5,27 +5,14 @@
 
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
-
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
-
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Bonzai Media</title>
 
-    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-    <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
-
-    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Sanchez&display=swap&subset=latin-ext" rel="stylesheet">
-    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <?php
+    require ("php/head.php");
+    ?>
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
@@ -39,7 +26,7 @@ require ("php/menu.php");
         <div class="flex">
             <div class="menuPlacement"></div>
 
-            <div class="indexHeaderContent">
+            <div class="headerContent">
                 <h1>Skal du også have lavet din<br>hjemmeside professionelt?</h1>
 
                 <p>Vi har 10 års erfaring i at bygge<br>hjemmesider og webshops</p>
@@ -110,51 +97,67 @@ require ("php/menu.php");
 
         <div class="grid">
             <div class="gridObject orange">
-                <i class="fas fa-link"></i>
+                <div>
+                    <i class="fas fa-link"></i>
 
-                <p>Kun 1 års binding</p>
+                    <p>Kun 1 års binding</p>
+                </div>
             </div>
 
             <div class="gridObject blue">
-                <i class="fas fa-thumbs-up"></i>
+                <div>
+                    <i class="fas fa-thumbs-up"></i>
 
-                <p>Tilfredshedsgaranti</p>
+                    <p>Tilfredshedsgaranti</p>
+                </div>
             </div>
 
             <div class="gridObject blue" id="gridObject3">
-                <i class="fas fa-lock-open"></i>
+                <div>
+                    <i class="fas fa-lock-open"></i>
 
-                <p>Administrator adgang</p>
+                    <p>Administrator adgang</p>
+                </div>
             </div>
 
             <div class="gridObject orange" id="gridObject4">
-                <i class="fas fa-laptop"></i>
+                <div>
+                    <i class="fas fa-laptop"></i>
 
-                <p>Nem administration</p>
+                    <p>Nem administration</p>
+                </div>
             </div>
 
             <div class="gridObject orange" id="gridObject5">
-                <i class="fas fa-hotel"></i>
+                <div>
+                    <i class="fas fa-hotel"></i>
 
-                <p>Webhotel inkluderet</p>
+                    <p>Webhotel inkluderet</p>
+                </div>
             </div>
 
             <div class="gridObject blue"  id="gridObject6">
-                <i class="fab fa-wordpress"></i>
+                <div>
+                    <i class="fab fa-wordpress"></i>
 
-                <p>Bygget på WordPress</p>
+                    <p>Bygget på WordPress</p>
+                </div>
             </div>
 
             <div class="gridObject blue">
-                <i class="fas fa-headset"></i>
+                <div>
+                    <i class="fas fa-headset"></i>
 
-                <p>Telefonsupport<br>på Dansk</p>
+                    <p>Telefonsupport<br>på Dansk</p>
+                </div>
             </div>
 
             <div class="gridObject orange">
-                <i class="fas fa-bolt"></i>
+                <div>
+                    <i class="fas fa-bolt"></i>
 
-                <p>Hurtigt i gang</p>
+                    <p>Hurtigt i gang</p>
+                </div>
             </div>
         </div>
 

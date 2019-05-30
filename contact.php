@@ -5,130 +5,143 @@
 
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
-
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
-
     <!-- Titel som ses oppe i browserens tab mv. -->
     <title>Sigende titel</title>
-
-    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-    <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
-
-    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Sanchez&display=swap&subset=latin-ext" rel="stylesheet">
-    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <?php
+    require ("php/head.php");
+    ?>
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-<aside class="menuBack">
-    <i class="fas fa-chevron-right"></i>
+<?php
+require ("php/menu.php");
+?>
 
-    <nav class="menu menuLoad">
-        <div class="logoImg">
-            <a href="index.php">
-                <img src="images/logoOffWhite.svg">
-            </a>
+    <section class="contactHeader">
+        <div class="flex">
+            <div class="menuPlacement"></div>
+
+            <div class="headerContent">
+                <h1>Tag kontakt!</h1>
+
+                <p>Hvis du er interesseret i en hjemmeside fra os,<br>eller har brug for support</p>
+            </div>
         </div>
 
-        <ul class="verticalFlex">
-            <li>
-                <a href="newWebsite.php">
-                    Ny hjemmeside
-                </a>
-            </li>
+        <svg x="0px" y="0px"
+             viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{display:none;}
+                </style>
+            <g id="Lag_2" class="st0">
+                <rect y="-930" class="st1" width="549" height="1076"/>
+            </g>
+            <g>
+                <path d="M0.5,145.5h549c0,0,271-5,575-72c351.8-77.5,585-66,795-62V151H0.5V145.5z"/>
+            </g>
+        </svg>
+    </section>
 
-            <li>
-                <a href="cases.php">
-                    Cases / Referencer
-                </a>
-            </li>
+    <section class="contactInfo">
+        <div class="flex">
+            <div class="info">
+                <h2>
+                   Kontakt os
+                </h2>
 
-            <li>
-                <a href="contact.php">
-                    Kontakt
-                </a>
-            </li>
+                <p>
+                    Tlf: 46 34 09 09<br>
+                    info@bonzaimedia.dk
+                </p>
 
-            <li>
-                <a href="blog.php">
-                    Blog
-                </a>
-            </li>
-        </ul>
+                <p>
+                    Lige meget om du interesseret i at få et professionelt webdesign,
+                    eller support på en hjemmeside vi allerede har lavet til dig,
+                    så er du velkomment til at ringe eller skrive.
+                </p>
 
-        <ul class="flex">
-            <li class="teamIcon">
-                <a>
-                    <img src="images/teamviewer.png">
-                </a>
-            </li>
+                <p>
+                    Da vi har kunder i hele landet foregår det meste af vores
+                    kundekommunikation over telefonen eller via mail, så vores
+                    dygtige medarbejdere sidder klar til at hjælpe dig.
+                </p>
 
-            <li class="someIcons">
-                <ul>
-                    <li>
-                        <a href="https://da-dk.facebook.com/networkmediadk" target="_blank">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
+                <p>
+                    Kontakt os for et tilbud, så ser vi hvad vi kan gøre for dig.
+                </p>
+            </div>
 
-                    <li>
-                        <a href="https://www.instagram.com/networkmediadk/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
+            <div class="contactForm">
+                <form>
+                    <input type="text" class="contactName" id="contactName" name="contactName" placeholder="Navn" required>
 
-                    <li>
-                        <a href="https://dk.linkedin.com/company/network-media-aps" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</aside>
+                    <input type="email" class="contactEmail" id="contactEmail" name="contactEmail" placeholder="E-mail" required>
 
+                    <input type="text" class="contactPhone" id="contactPhone" name="contactPhone" placeholder="Telefon nr.">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+                    <select required>
+                        <option value="" disabled selected hidden style="color: gray">
+                            Vælg emne
+                        </option>
 
-    $window = $(window);
-    $windowHeight = $window.height();
+                        <option value="support">
+                            Support
+                        </option>
 
-    $scrollDistance = $(document).scrollTop();
+                        <option value="sale">
+                            Ny hjemmeside
+                        </option>
+                    </select>
 
-    if( $windowHeight <= $scrollDistance ){
-        $(".menu").addClass("menuNotAtTop");
-    }if( $windowHeight > $scrollDistance ){
-        $(".menu").removeClass("menuNotAtTop");
-    }
+                    <textarea class="contactMsg" id="contactMsg" name="contactMsg" placeholder="Skriv ..." required rows="5">
 
-    $(document).scroll(function() {
-        $scrollDistance = $(document).scrollTop();
+                    </textarea>
 
-        if( $windowHeight <= $scrollDistance ){
-            $(".menu").addClass("menuNotAtTop");
-        }if( $windowHeight > $scrollDistance ){
-            $(".menu").removeClass("menuNotAtTop");
-        }
-    });
+                    <input type="submit" value="Send" class="contactSubmit" id="contactSubmit" name="contactSubmit">
+                </form>
+            </div>
+        </div>
+    </section>
 
-    $(document).ready(function(){
-        $(".menu").removeClass("menuLoad");
-    })
+    <section class="contactLocation">
+        <svg x="0px" y="0px"
+             viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve">
+            <g>
+                <path d="M1919.5,0H0.5v145.5h549c0,0,271-5,575-72c351.8-77.5,585-66,795-62V0z"/>
+            </g>
+        </svg>
 
-</script>
+        <div class="flex">
+            <div class="location">
+                <h2>
+                    Find os i Roskilde
+                </h2>
+
+                <p>
+                    Hersegade 20<br>
+                    4000, Roskilde
+                </p>
+
+                <p>
+                    Vi har kontor i Roskilde, og byder gerne på en kop kaffe hvis du
+                    foretrækker et personligt møde. Men hvis der er for langt til Roskilde
+                    for dig, så er det også helt okay, vi har god erfaring med at klare
+                    kommunikationen via telefon og mail.
+                </p>
+            </div>
+
+            <div class="map" id="googleMap"></div>
+        </div>
+    </section>
+
+<?php
+require ("php/footer.php");
+require ("php/javascript.php");
+?>
 
 </body>
 </html>
