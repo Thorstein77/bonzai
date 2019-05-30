@@ -379,9 +379,7 @@ img {
    }
  }
 }
-
 // contact
-
 .contactHeader{
   @include header;
   margin: 5vw 0 0 0;
@@ -497,10 +495,56 @@ img {
     }
   }
 }
-
-
+// cases
+.casesHeader{
+  @include header;
+  .flex{
+    .headerContent{
+      // skift billede
+      background: url("../images/banner-index.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+.cases{
+  width: 100%;
+  .grid{
+    width: 80%;
+    margin: 10vw auto 5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 5vw;
+    .gridObject{
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      .imageScroll{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      a{
+        margin-top: 2vw;
+        font-family: $headlineFont;
+        color: $deepOrange;
+        font-size: 20pt;
+        text-decoration: none;
+      }
+    }
+  }
+}
 // footer
-
 footer{
   width: 100%;
   background-color: $lightBlue;
@@ -851,6 +895,24 @@ footer{
       }
     }
   }
+  .casesHeader{
+    @include header768;
+  }
+  .cases{
+    .grid{
+      width: 90%;
+      margin: 10vw auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 30px;
+      .gridObject{
+        a{
+          margin-top: 10px;
+          font-size: 15pt;
+        }
+      }
+    }
+  }
   footer{
     .footerGrid{
       grid-template-rows: 1fr 2fr;
@@ -1138,6 +1200,12 @@ footer{
         }
       }
     }
+  }
+  .casesHeader{
+    @include header992;
+  }
+  .cases{
+    @include webPush;
   }
   footer{
     @include webPush;
