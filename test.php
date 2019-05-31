@@ -37,61 +37,24 @@
 
 
 
-    <main>
-        <header>
 
 
 
+<section style="width: 100%; height: 200px" >
 
-        </header>
+</section>
 
+<section class="clipTest">
+    <svg viewBox="0 0 100 100" id="maskTest">
+        <defs>
+            <mask id="svgPath">
+                <rect width="100%" height="100%" fill="#FFFFFF"></rect>
 
+            </mask>
+        </defs>
+    </svg>
+</section>
 
-
-        <section>
-            <svg class="curveTest" viewBox="0 0 1920.5 147.5">
-                <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
-            </svg>
-
-
-            <svg class="curveTest" viewBox="0 0 1920.5 147.5">
-                <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
-            </svg>
-        </section>
-
-
-
-        <section>
-
-        </section>
-    </main>
-
-
-
-    <img class="mask-img example-mask" src="images/farcry.jpg" alt="Masked image">
-
-    <section class="secCurve1">
-        <svg class="curveTest" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.5 147.5">
-            <path d="M-.5,147.5s4.6-95.52,699-96C1421,51,1210,242,1920,0V146H-.5Z" transform="translate(0.5)"/>
-        </svg>
-    </section>
-
-    <section class="secCurve2">
-
-    </section>
-
-
-    <div class="testCut">
-
-
-        <div class="testCutTop">
-
-        </div>
-
-        <div class="testCutBtm">
-
-        </div>
-    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
