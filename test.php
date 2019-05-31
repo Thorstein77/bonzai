@@ -40,19 +40,10 @@
 
 
 
-<section style="width: 100%; height: 200px" >
 
-</section>
 
 <section class="clipTest">
-    <svg viewBox="0 0 100 100" id="maskTest">
-        <defs>
-            <mask id="svgPath">
-                <rect width="100%" height="100%" fill="#FFFFFF"></rect>
 
-            </mask>
-        </defs>
-    </svg>
 </section>
 
 

@@ -29,7 +29,6 @@
     $(document).ready(function(){
         $(".menu").removeClass("menuLoad");
 
-
         // Slideshow
         var slidesWidth = ($(".slideContainer").outerWidth() / $(".slideObject").outerWidth());
         var slidesShown = Math.floor(slidesWidth);
