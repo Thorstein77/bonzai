@@ -379,61 +379,172 @@ img {
    }
  }
 }
-
 // contact
-
 .contactHeader{
   @include header;
+  margin: 5vw 0 0 0;
   .flex{
     .headerContent{
       background: url("../images/banner-contact.jpg") no-repeat center;
       background-size: cover;
+      form{
+        .newsEmail{
+          width: 80%;
+          font-family: $textFont;
+          text-align: center;
+          height: 25px;
+          border: none;
+          background-color: $offWhite;
+          border-radius: 5px;
+        }
+        .newsButton{
+          @include orangeButton;
+          width: 60%;
+          padding: 4px;
+          font-size: 10pt;
+          border-radius: 5px;
+          margin-right: 10%;
+        }
+        input{
+          margin-top: 15px;
+        }
+      }
     }
   }
 }
 .contactInfo{
   width: 100%;
-
   .flex{
     width: 90%;
     margin: 10vw auto;
     display: flex;
     flex-flow: column nowrap;
-
     .info{
       p{
         margin-bottom: 10px;
       }
     }
-
     .contactForm{
       width: 100%;
-
+      margin: 5vw 0 0;
+      form{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+      }
       input, select, textarea{
         width: 100%;
         font-family: $textFont;
         border-radius: 8px;
-        border-color: $darkBlue;
-
+        border: $darkBlue 2px solid;
         padding: 8px;
         background-color: $offWhite;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      select{
+
+      }
+      .contactSubmit{
+        background-color: $deepOrange;
+        color: $offWhite;
+        border: $deepOrange 2px solid;
+        width: 40%;
       }
     }
   }
 }
 .contactLocation{
   background-color: $midToneOrange;
+  width: 100%;
+  position: relative;
   svg{
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
     path{
       fill: $offWhite;
     }
   }
+  .flex{
+    display: flex;
+    flex-flow: nowrap column;
+    .location{
+      width: 90%;
+      margin: 15vw auto 0;
+      h2{
+        color: black;
+        width: 50%;
+      }
+      p{
+        margin-bottom: 10px;
+      }
+    }
+    .mapSize{
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
+    }
+    .map{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
 }
-
-
+// cases
+.casesHeader{
+  @include header;
+  .flex{
+    .headerContent{
+      // skift billede
+      background: url("../images/banner-index.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+.cases{
+  width: 100%;
+  .grid{
+    width: 80%;
+    margin: 10vw auto 5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 5vw;
+    .gridObject{
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      .imageScroll{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      a{
+        margin-top: 2vw;
+        font-family: $headlineFont;
+        color: $deepOrange;
+        font-size: 20pt;
+        text-decoration: none;
+      }
+    }
+  }
+}
 // footer
-
 footer{
   width: 100%;
   background-color: $lightBlue;
@@ -732,6 +843,76 @@ footer{
       mask-size: 100%;
     }
   }
+  .contactHeader{
+    @include header768;
+    .flex{
+      .headerContent{
+        form{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .newsEmail{
+            width: 40%;
+          }
+          .newsButton{
+            width: 40%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .contactInfo{
+    .flex{
+      flex-direction: row;
+      justify-content: space-between;
+      .info{
+        width: 40%;
+        margin: 0;
+      }
+      .contactForm{
+        width: 50%;
+        margin: 0;
+      }
+    }
+  }
+  .contactLocation{
+    svg{
+      z-index: 90;
+    }
+    .flex{
+      flex-direction: row;
+      justify-content: space-between;
+      .location{
+        width: 40%;
+        h2{
+          width: 100%;
+        }
+      }
+      .mapSize{
+        width: 50%;
+        padding-top: 60%;
+      }
+    }
+  }
+  .casesHeader{
+    @include header768;
+  }
+  .cases{
+    .grid{
+      width: 90%;
+      margin: 10vw auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 30px;
+      .gridObject{
+        a{
+          margin-top: 10px;
+          font-size: 15pt;
+        }
+      }
+    }
+  }
   footer{
     .footerGrid{
       grid-template-rows: 1fr 2fr;
@@ -779,14 +960,11 @@ footer{
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
-
   //mixins
-
   @mixin webPush(){
     width: 94.234vw;
     margin: 0 0 0 auto;
   }
-
   @mixin header992(){
     @include webPush;
     .flex{
@@ -814,7 +992,6 @@ footer{
       }
     }
   }
-
   .headerMobile{
     display: none;
   }
@@ -993,6 +1170,43 @@ footer{
       mask-size: 100%;
     }
   }
+  .contactHeader{
+    @include header992;
+    .flex{
+      .headerContent{
+        form{
+          padding-right: 5%;
+        }
+      }
+    }
+  }
+  .contactInfo{
+    @include webPush;
+    .flex{
+      .info{
+        p{
+          font-size: 12pt;
+        }
+      }
+    }
+  }
+  .contactLocation{
+    @include webPush;
+    .flex{
+      .location{
+        margin-top: 22vw;
+        p{
+          font-size: 12pt;
+        }
+      }
+    }
+  }
+  .casesHeader{
+    @include header992;
+  }
+  .cases{
+    @include webPush;
+  }
   footer{
     @include webPush;
     .footerGrid{
@@ -1074,6 +1288,25 @@ footer{
       }
     }
   }
+  .contactHeader{
+    @include header1200;
+  }
+  .contactInfo{
+    .flex{
+      margin: 5vw auto;
+    }
+  }
+  .contactLocation{
+    .flex{
+      .location{
+        width: 33%;
+        margin: 15vw auto 0 5%;
+      }
+      .mapSize{
+        padding-top: 40%;
+      }
+    }
+  }
   footer{
     .footerGrid{
       .footerLinks{
@@ -1137,6 +1370,35 @@ footer{
   .indexControl{
     .indexControlInfo{
       padding: 8vw 13% 0 0;
+    }
+  }
+  .contactHeader{
+    .flex{
+      .headerContent{
+        form{
+
+        }
+      }
+    }
+  }
+  .contactInfo{
+
+    .flex{
+      .info{
+        p{
+
+        }
+      }
+    }
+  }
+  .contactLocation{
+    .flex{
+      .location{
+
+        p{
+
+        }
+      }
     }
   }
   footer{
