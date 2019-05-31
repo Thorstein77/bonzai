@@ -643,66 +643,21 @@ footer{
 
 // testing code
 
-.example-mask {
-  //-webkit-mask-image: url();
-  //mask-image: url();
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-}
-
-.secCurve1{
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background-color: red;
+.clipTest{
+  background-color: #ff6500;
+  height: 300px;
   width: 100%;
-  height: 100vh;
+  position: relative;
+  mask: url(#svgPath);
 }
-
-.curveTest{
+#maskTest{
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: -1px;
-  width: 100%;
-
-  path{
-    fill: #00f;
-  }
+  top: 0;
+  left: 0;
+  
 }
-
-.secCurve2{
-  margin: 0;
-  padding: 0;
-  background-color: #00f;
-  width: 100%;
-  height: 100vh;
-}
-
-.testCut{
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 1000px;
-}
-
-.testCutTop{
-  display: block;
-  position: relative;
-  background: url("../images/farcry.jpg") no-repeat center;   width: 100%;
-  height: 400px;
-  //clip-path: url("../images/Bonzai-line-test3.svg");
-}
-
-.testCutBtm{
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background: red;
-  //clip-path: url("../images/Bonzai-line-test3.svg");
-}
-
 
 
 @media screen and (min-width: 768px) {
@@ -1265,7 +1220,6 @@ footer{
       }
     }
   }
-
   .indexHeader{
     @include header1200;
   }
@@ -1306,6 +1260,9 @@ footer{
         padding-top: 40%;
       }
     }
+  }
+  .casesHeader{
+    @include header1200;
   }
   footer{
     .footerGrid{
@@ -1372,33 +1329,9 @@ footer{
       padding: 8vw 13% 0 0;
     }
   }
-  .contactHeader{
-    .flex{
-      .headerContent{
-        form{
-
-        }
-      }
-    }
-  }
-  .contactInfo{
-
-    .flex{
-      .info{
-        p{
-
-        }
-      }
-    }
-  }
-  .contactLocation{
-    .flex{
-      .location{
-
-        p{
-
-        }
-      }
+  .cases{
+    .grid{
+      grid-gap: 80px;
     }
   }
   footer{
@@ -1466,6 +1399,38 @@ footer{
       padding: 11vw 21% 0 0;
     }
   }
+  .contactHeader{
+    @include header1920;
+    .flex{
+      .headerContent{
+        form{
+          .newsEmail{
+            width: 20%;
+          }
+          .newsButton{
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+  .contactInfo{
+    .flex{
+      .info{
+        padding: 0 5%;
+      }
+    }
+  }
+  .contactLocation{
+    .flex{
+      .location{
+        padding: 0 5%;
+      }
+    }
+  }
+  .casesHeader{
+    @include header1920;
+  }
   footer{
     .footerGrid{
       .footerNewsletter{
@@ -1481,6 +1446,42 @@ footer{
 
 @media screen and (min-width: 2560px) {
   // Alt der ændres i computer fra 1920px
+  @mixin header2560(){
+    .flex{
+      .headerContent{
+        padding: 45vh 0;
+      }
+    }
+  }
+  .indexHeader{
+    @include header2560;
+  }
+  .contactHeader{
+    @include header2560;
+  }
+  .contactInfo{
+    .flex{
+      .info{
+        margin: 0 0 0 6.3%;
+        padding: 0 10% 0 5%;
+      }
+    }
+  }
+  .contactLocation{
+    .flex{
+      .location{
+        margin: 15vw auto 0 10%;
+      }
+    }
+  }
+  .casesHeader{
+    @include header2560;
+  }
+  .cases{
+    .grid{
+      width: 80%;
+    }
+  }
 }
 
 @media print {
