@@ -33,18 +33,38 @@
 
 
 
+<section class="indexHeader">
+    <div class="flex">
+        <div class="menuPlacement"></div>
 
+        <div class="headerContent">
+            <h1>Skal du også have lavet din<br>hjemmeside professionelt?</h1>
 
+            <p>Vi har 10 års erfaring i at bygge<br>hjemmesider og webshops</p>
+        </div>
+    </div>
 
-
-
-
-
-
-
-<section class="clipTest">
-
+    <svg x="0px" y="0px"
+         viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve">
+            <style type="text/css">
+                .st0{display:none;}
+            </style>
+        <g id="Lag_2" class="st0">
+            <rect y="-930" class="st1" width="549" height="1076"/>
+        </g>
+        <g>
+            <path d="M0.5,145.5h549c0,0,271-5,575-72c351.8-77.5,585-66,795-62V151H0.5V145.5z"/>
+        </g>
+        </svg>
 </section>
+
+
+
+
+
+
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

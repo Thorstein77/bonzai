@@ -7,7 +7,7 @@
 
         <div class="logoMob">
             <a href="index.php">
-                <img src="images/logoOffWhite.svg">
+                <img src="images/svg/logoOffWhite.svg">
             </a>
         </div>
     </div>
@@ -77,7 +77,7 @@
     <nav class="menu menuLoad">
         <div class="logoImg">
             <a href="index.php">
-                <img src="images/logoOffWhite.svg">
+                <img src="images/svg/logoOffWhite.svg">
             </a>
         </div>
 
