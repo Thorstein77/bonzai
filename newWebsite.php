@@ -147,7 +147,7 @@ require ("php/menu.php");
 
             <div>
                 <p>
-                    Vores løsninger koster forskelligt alt efter dine behov og ønsker, men som standard starter vores priser FRA:
+                    Vores løsninger koster forskelligt alt efter dine behov og ønsker, men som standard starter vores priser <b>FRA:</b>
                 </p>
 
                 <ul>
@@ -237,7 +237,7 @@ require ("php/menu.php");
 <section class="newWebshop">
     <svg x="0px" y="0px" viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve" id="newWebshowSvgTop">
         <g>
-            <path d="M1919.5,0H0.5v145.5h549c0,0,271-5,575-72c351.8-77.5,585-66,795-62V0z"/>
+            <path d="M1919.5,0H0v145.5h549.5c0,0,271-5,575-72c351.8-77.5,585-66,795-62V0z"/>
         </g>
     </svg>
 
@@ -330,7 +330,7 @@ require ("php/menu.php");
     <div class="flex">
         <div class="administration">
             <h2>
-                Administrer dit websted
+                Administrer<br>dit websted
             </h2>
 
             <p>
@@ -356,9 +356,7 @@ require ("php/menu.php");
             </p>
         </div>
 
-        <div class="img">
-            <img src="images/website_adminstrator.jpg">
-        </div>
+        <img src="images/website_adminstrator.jpg">
     </div>
 </section>
 

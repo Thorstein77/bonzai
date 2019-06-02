@@ -7,21 +7,21 @@
 
     $window = $(window);
     $windowHeight = $window.height();
-
+    $menuHide = ($windowHeight / 5);
     $scrollDistance = $(document).scrollTop();
 
-    if( $windowHeight <= $scrollDistance ){
+    if( ($windowHeight - $menuHide) <= $scrollDistance ){
         $(".menu").addClass("menuNotAtTop");
-    }if( $windowHeight > $scrollDistance ){
+    }if( ($windowHeight - $menuHide) > $scrollDistance ){
         $(".menu").removeClass("menuNotAtTop");
     }
 
     $(document).scroll(function() {
         $scrollDistance = $(document).scrollTop();
 
-        if( $windowHeight <= $scrollDistance ){
+        if( ($windowHeight - $menuHide) <= $scrollDistance ){
             $(".menu").addClass("menuNotAtTop");
-        }if( $windowHeight > $scrollDistance ){
+        }if( ($windowHeight - $menuHide) > $scrollDistance ){
             $(".menu").removeClass("menuNotAtTop");
         }
     });
