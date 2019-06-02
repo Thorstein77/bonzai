@@ -140,28 +140,30 @@ require ("php/menu.php");
 
 <section class="newPrice">
     <div class="flex">
-        <div>
+        <div class="newPriceInfo">
             <h2>
                 Hvad koster en professionel hjemmeside?
             </h2>
 
-            <p>
-                Vores løsninger koster forskelligt alt efter dine behov og ønsker, men som standard starter vores priser FRA:
-            </p>
+            <div>
+                <p>
+                    Vores løsninger koster forskelligt alt efter dine behov og ønsker, men som standard starter vores priser FRA:
+                </p>
 
-            <ul>
-                <li>
-                    Hjemmeside i WordPress: 8.000 kr.
-                </li>
+                <ul>
+                    <li>
+                        Hjemmeside i WordPress: 8.000 kr.
+                    </li>
 
-                <li>
-                    Webshop i WooCommerce: 8.000 kr.
-                </li>
+                    <li>
+                        Webshop i WooCommerce: 8.000 kr.
+                    </li>
 
-                <li>
-                    Webshop i Magento 2: 14.000 kr.
-                </li>
-            </ul>
+                    <li>
+                        Webshop i Magento 2: 14.000 kr.
+                    </li>
+                </ul>
+            </div>
 
             <p>
                 Nogle tillægsservices kan øge omkostningerne. Vi giver selvfølgelig et tilbud baseret på dine ønsker.
@@ -171,47 +173,69 @@ require ("php/menu.php");
                 Vores løsninger kommer som standard med et abonnement, dette dækker over services som webhotel, support, e-mail og daglig backup.
             </p>
 
-            <p>
-                Abonnement priserne er:
-            </p>
+            <div>
+                <p>
+                    Abonnement priserne er:
+                </p>
 
-            <ul>
-                <li>
-                    WordPress: 350 kr. per måned.
-                </li>
+                <ul>
+                    <li>
+                        WordPress: 350 kr. per måned.
+                    </li>
 
-                <li>
-                    WooCommerce: 450 kr. per måned.
-                </li>
+                    <li>
+                        WooCommerce: 450 kr. per måned.
+                    </li>
 
-                <li>
-                    Magento 2: 750 kr. per måned.
-                </li>
-            </ul>
+                    <li>
+                        Magento 2: 750 kr. per måned.
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="grid">
-            <div class="gridObject">
-
+            <div class="gridObject gridObjectOrange">
+                <div class="gridFlex">
+                    <i class="fas fa-sync-alt"></i>
+                    <p>
+                        Abonnement<br>FRA 350 kr.
+                    </p>
+                </div>
             </div>
 
             <div class="gridObject">
-
+                <div class="gridFlex">
+                    <i class="fab fa-wordpress"></i>
+                    <p>
+                        Hjemmeside<br>FRA 8.000 kr.
+                    </p>
+                </div>
             </div>
 
             <div class="gridObject">
-
+                <div class="gridFlex">
+                    <i class="fab fa-wordpress"></i>
+                    <p>
+                        WooCommerce<br>FRA 8.000kr.
+                    </p>
+                </div>
             </div>
 
-            <div class="gridObject">
-
+            <div class="gridObject gridObjectOrange">
+                <div class="gridFlex">
+                    <i class="fab fa-magento"></i>
+                    <p>
+                        Magento 2<br>FRA 14.000 kr.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="newWebshow">
-    <svg x="0px" y="0px" viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve">
+<section class="newWebshop">
+    <svg x="0px" y="0px" viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve" id="newWebshowSvgTop">
         <g>
             <path d="M1919.5,0H0.5v145.5h549c0,0,271-5,575-72c351.8-77.5,585-66,795-62V0z"/>
         </g>
@@ -239,15 +263,30 @@ require ("php/menu.php");
 
             <div class="grid">
                 <div class="gridObject">
+                    <div class="flex">
+                        <i class="fas fa-credit-card"></i>
+                        <p>
+                            Betaling<br>med kort
+                        </p>
+                    </div>
+                </div>
 
+                <div class="gridObject gridObjectOrange">
+                    <div class="flex">
+                        <i class="fab fa-wordpress"></i>
+                        <p>
+                            Bygget på<br>WooCommerce
+                        </p>
+                    </div>
                 </div>
 
                 <div class="gridObject">
-
-                </div>
-
-                <div class="gridObject">
-
+                    <div class="flex">
+                        <i class="fab fa-magento"></i>
+                        <p>
+                            Bygget på<br>Magento 2
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,7 +296,7 @@ require ("php/menu.php");
         </div>
     </div>
 
-    <svg x="0px" y="0px" viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve">
+    <svg x="0px" y="0px" viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve" id="newWebshowSvgBtm">
         <g>
             <path d="M0.5,145.5h549c0,0,271-5,575-72c351.8-77.5,585-66,795-62V151H0.5V145.5z"/>
         </g>
@@ -267,7 +306,7 @@ require ("php/menu.php");
 <section class="newMobile">
     <div class="flex">
         <div class="img">
-            <img>
+            <img src="images/mobile.png">
         </div>
 
         <div class="mobile">
