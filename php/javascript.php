@@ -6,22 +6,27 @@
     })
 
     $window = $(window);
-    $windowHeight = $window.height();
-    $menuHide = ($windowHeight / 5);
+    $headerHeight = $(".menuPlacement").height();
+    $menuHide = ($headerHeight / 4);
     $scrollDistance = $(document).scrollTop();
 
-    if( ($windowHeight - $menuHide) <= $scrollDistance ){
+    if( ($headerHeight - $menuHide) <= $scrollDistance ){
         $(".menu").addClass("menuNotAtTop");
-    }if( ($windowHeight - $menuHide) > $scrollDistance ){
+    }if( ($headerHeight - $menuHide) > $scrollDistance ){
         $(".menu").removeClass("menuNotAtTop");
     }
+
+    $(window).resize(function(){
+        $headerHeight = $(".menuPlacement").height();
+        $menuHide = ($headerHeight / 4);
+    });
 
     $(document).scroll(function() {
         $scrollDistance = $(document).scrollTop();
 
-        if( ($windowHeight - $menuHide) <= $scrollDistance ){
+        if( ($headerHeight - $menuHide) <= $scrollDistance ){
             $(".menu").addClass("menuNotAtTop");
-        }if( ($windowHeight - $menuHide) > $scrollDistance ){
+        }if( ($headerHeight - $menuHide) > $scrollDistance ){
             $(".menu").removeClass("menuNotAtTop");
         }
     });

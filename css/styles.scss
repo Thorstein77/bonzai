@@ -113,6 +113,11 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+a{
+  font-weight: bold;
+  color: $midToneOrange;
+  text-decoration: none;
+}
 
 // header
 
@@ -1263,7 +1268,9 @@ footer{
     .flex{
       display: block;
       .menuPlacement{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -2017,12 +2024,27 @@ footer{
   @mixin header2560(){
     .flex{
       .headerContent{
-        padding: 45vh 0;
+        padding: 23vw 0;
       }
     }
   }
   .indexHeader{
     @include header2560;
+  }
+  .newHeader{
+    @include header2560;
+    .headerPush{
+      height: 50vw;
+    }
+  }
+  .newPrice{
+    .flex{
+      width: 70%;
+      justify-content: space-around;
+      .grid{
+        margin: 0;
+      }
+    }
   }
   .contactHeader{
     @include header2560;

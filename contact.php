@@ -51,7 +51,7 @@ require ("php/menu.php");
             </g>
         </svg>
     </section>
-
+    <span id="anchorWrite"></span>
     <section class="contactInfo">
         <div class="flex">
             <div class="info">

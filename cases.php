@@ -49,7 +49,7 @@ require ("php/menu.php");
     <div class="grid">
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/audiovector-ref-1.jpg">
+                <img src="images/cases/audiovector-ref-1.jpg" alt="Eksempel på webdesign for Audiovector">
             </div>
 
             <a href="https://audiovector.com/" target="_blank">
@@ -59,7 +59,7 @@ require ("php/menu.php");
 
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/sandrarosen-ref.jpg">
+                <img src="images/cases/sandrarosen-ref.jpg" alt="Eksempel på webdesign for Sandra Rosen">
             </div>
 
             <a href="https://sandrarosendahl.dk/" target="_blank">
@@ -69,7 +69,7 @@ require ("php/menu.php");
 
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/lohke-ref.jpg">
+                <img src="images/cases/lohke-ref.jpg" alt="Eksempel på webdesign for Lohke">
             </div>
 
             <a href="https://lohke.dk/" target="_blank">
@@ -79,7 +79,7 @@ require ("php/menu.php");
 
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/barbarmaria-ref.jpg">
+                <img src="images/cases/barbarmaria-ref.jpg" alt="Eksempel på webdesign for Barbara Maria">
             </div>
 
             <a href="https://barbaramaria.dk/" target="_blank">
@@ -89,7 +89,7 @@ require ("php/menu.php");
 
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/djpromo-ref.jpg">
+                <img src="images/cases/djpromo-ref.jpg" alt="Eksempel på webdesign for DJ promo">
             </div>
 
             <a href="#" target="_blank">
@@ -99,7 +99,7 @@ require ("php/menu.php");
 
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/tpradio-ref.jpg">
+                <img src="images/cases/tpradio-ref.jpg" alt="Eksempel på webdesign for TP-Radio">
             </div>
 
             <a href="https://tpradio.com/" target="_blank">
@@ -109,7 +109,7 @@ require ("php/menu.php");
 
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/mariadk-ref.jpg">
+                <img src="images/cases/mariadk-ref.jpg" alt="Eksempel på webdesign for Maria.dk">
             </div>
 
             <a href="#" target="_blank">
@@ -119,7 +119,7 @@ require ("php/menu.php");
 
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/gormspizza-ref.jpg">
+                <img src="images/cases/gormspizza-ref.jpg" alt="Eksempel på webdesign for Gorms Pizza">
             </div>
 
             <a href="https://www.gormspizza.dk/" target="_blank">
@@ -129,7 +129,7 @@ require ("php/menu.php");
 
         <div class="gridObject">
             <div class="imageScroll">
-                <img src="images/cases/highperformance-ref.jpg">
+                <img src="images/cases/highperformance-ref.jpg" alt="Eksempel på webdesign for High Performance">
             </div>
 
             <a href="https://high-performance.dk/" target="_blank">

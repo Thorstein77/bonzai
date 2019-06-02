@@ -7,7 +7,7 @@
 
         <div class="logoMob">
             <a href="index.php">
-                <img src="images/svg/logoOffWhite.svg">
+                <img src="images/svg/logoOffWhite.svg" alt="Bonzai Media Logo">
             </a>
         </div>
     </div>
@@ -16,25 +16,31 @@
 <nav class="mobileMenu">
     <ul class="verticalFlex">
         <li>
-            <a href="newWebsite.php">
+            <a href="index.php">
+                Forside
+            </a>
+        </li>
+
+        <li>
+            <a href="ny-hjemmeside">
                 Ny hjemmeside
             </a>
         </li>
 
         <li>
-            <a href="cases.php">
+            <a href="referencer">
                 Cases / Referencer
             </a>
         </li>
 
         <li>
-            <a href="contact.php">
+            <a href="kontakt">
                 Kontakt
             </a>
         </li>
 
         <li>
-            <a href="blog.php">
+            <a href="blog">
                 Blog
             </a>
         </li>
@@ -43,7 +49,7 @@
     <ul class="flex">
         <li class="teamIcon">
             <a>
-                <img src="images/teamviewer.png">
+                <img src="images/teamviewer.png" alt="TeamViewer Logo">
             </a>
         </li>
 
@@ -77,31 +83,37 @@
     <nav class="menu menuLoad">
         <div class="logoImg">
             <a href="index.php">
-                <img src="images/svg/logoOffWhite.svg">
+                <img src="images/svg/logoOffWhite.svg" alt="Bonzai Media Logo">
             </a>
         </div>
 
         <ul class="verticalFlex">
             <li>
-                <a href="newWebsite.php">
+                <a href="index.php">
+                    Forside
+                </a>
+            </li>
+
+            <li>
+                <a href="ny-hjemmeside">
                     Ny hjemmeside
                 </a>
             </li>
 
             <li>
-                <a href="cases.php">
+                <a href="referencer">
                     Cases / Referencer
                 </a>
             </li>
 
             <li>
-                <a href="contact.php">
+                <a href="kontakt">
                     Kontakt
                 </a>
             </li>
 
             <li>
-                <a href="blog.php">
+                <a href="blog">
                     Blog
                 </a>
             </li>
@@ -110,7 +122,7 @@
         <ul class="flex">
             <li class="teamIcon">
                 <a>
-                    <img src="images/teamviewer.png">
+                    <img src="images/teamviewer.png" alt="TeamViewer Logo">
                 </a>
             </li>
 

@@ -64,28 +64,28 @@ require ("php/menu.php");
                 </p>
 
                 <p>
-                    Vores løsninger har en bindingsperiode på 1 år, med en mindstepris <a>FRA 12.000kr.</a>
+                    Vores løsninger har en bindingsperiode på 1 år, med en mindstepris <a href="newWebsite.php#anchorPrice">FRA 12.000kr.</a>
                 </p>
             </div>
 
             <div class="grid">
                 <div>
-                    <img src="images/mariadk_website-clipped.jpg">
+                    <img src="images/mariadk_website-clipped.jpg" alt="Webdesign for maria.dk">
                 </div>
 
                 <div>
-                    <img src="images/audiovector_webshop-clipped.jpg">
+                    <img src="images/audiovector_webshop-clipped.jpg" alt="Webdesign for Audiovector.dk">
                 </div>
 
                 <div>
                     <p>
-                        Vi laver hjemmesider som er specielt designet til dig, med det du har brug for. Du kan læse mere om vores hjemmeside løsninger <a>her.</a>
+                        Vi laver hjemmesider som er specielt designet til dig, med det du har brug for. Du kan læse mere om vores hjemmeside løsninger <a href="newWebsite.php">her.</a>
                     </p>
                 </div>
 
                 <div>
                     <p>
-                        Vi kan også levere en webshop, enten til din nuværende eller nye hjemmeside. Du kan læse mere om vores webshop løsninger <a>her.</a>
+                        Vi kan også levere en webshop, enten til din nuværende eller nye hjemmeside. Du kan læse mere om vores webshop løsninger <a href="newWebsite.php#anchorWebshop">her.</a>
                     </p>
                 </div>
             </div>
@@ -192,7 +192,7 @@ require ("php/menu.php");
             </p>
 
             <p>
-                Her er nogle af de kunder, som vi har arbejdet med. Her kan du se eksempler på nogle af de cases vi har lavet
+                Her er nogle af de kunder, som vi har arbejdet med, og <a href="cases.php">her</a> kan du se eksempler på nogle af de cases vi har lavet
             </p>
         </div>
 
@@ -200,45 +200,43 @@ require ("php/menu.php");
             <div class="slideContainer">
                 <div id="slideLength">
                     <div class="slideObject">
-                        <img src="images/logos/av.png">
+                        <img src="images/logos/av.png" alt="Logo Audiovector">
                     </div>
 
                     <div class="slideObject">
-                        <img src="images/logos/distinto.png">
+                        <img src="images/logos/distinto.png" alt="Logo Distinto">
                     </div>
 
                     <div class="slideObject">
-                        <img src="images/logos/ethjem.png">
+                        <img src="images/logos/ethjem.png" alt="Logo Ethjem">
                     </div>
 
                     <div class="slideObject">
-                        <img src="images/logos/gorms.png">
+                        <img src="images/logos/gorms.png" alt="Logo Gorms">
                     </div>
 
                     <div class="slideObject">
-                        <img src="images/logos/hk.png">
+                        <img src="images/logos/hk.png" alt="Logo Havarikommissionen">
                     </div>
 
                     <div class="slideObject">
-                        <img src="images/logos/hp.png">
+                        <img src="images/logos/hp.png" alt="Logo High Performance">
                     </div>
 
                     <div class="slideObject">
-                        <img src="images/logos/netto.png">
+                        <img src="images/logos/netto.png" alt="Logo Netto">
                     </div>
 
                     <div class="slideObject">
-                        <img src="images/logos/peugeot-1.png">
+                        <img src="images/logos/peugeot-1.png" alt="Logo Peugeot">
                     </div>
 
                     <div class="slideObject">
-                        <img src="images/logos/sr.png">
+                        <img src="images/logos/sr.png" alt="Logo Sarah Rosendahl">
                     </div>
                 </div>
 
-                <div id="slideDots">
-
-                </div>
+                <div id="slideDots"></div>
             </div>
         </div>
     </section>
@@ -261,15 +259,15 @@ require ("php/menu.php");
             </p>
 
             <p>
-                Skulle noget gå galt, kan du altid ringe eller skrive til os.
+                Skulle noget gå galt, kan du altid <a href="contact.php#anchorWrite">ringe eller skrive til os.</a>
             </p>
 
             <p>
-                Du kan læse mere om administration og support <a>her.</a>
+                Du kan læse mere om administration og support <a href="newWebsite.php#anchorAdministration">her.</a>
             </p>
         </div>
 
-        <img src="images/index_control.jpg">
+        <img src="images/index_control.jpg" alt="Administration af hjemmeside">
     </section>
 
 <?php
