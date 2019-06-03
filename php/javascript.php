@@ -98,3 +98,13 @@
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5edFMHjjsQfptoPzIVLDpHPLIvBfxyjY&callback=myMap"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#blogScroll').click(function () {
+            $('.blogList').animate({
+                scrollTop: '+=100'
+            }, 100);
+        });
+    });
+</script>
