@@ -390,7 +390,7 @@ a{
   position: relative;
   .flex{
     z-index: 99;
-    -webkit-mask-image: url(../images/svg/waveTopMask.svg);
+    -webkit-mask: url(../images/svg/waveTopMask.svg);
     mask: url(../images/svg/waveTopMask.svg);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
@@ -1314,7 +1314,7 @@ footer{
     .menuBackBtn{
       position: fixed;
       left: -150px;
-      right: -140px;
+      width: 0;
     }
     label{
       margin: 0 auto;
@@ -1330,7 +1330,7 @@ footer{
       left: 0;
       right: 72.5%;
       background-color: $midToneBlue;
-      display: none;
+      display: block;
       z-index: 101;
       transition: 1s;
       color: $offWhite;

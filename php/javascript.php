@@ -16,10 +16,6 @@
         $(".menu").removeClass("menuNotAtTop");
     }
 
-    $("#menuBackBtn").click(function(){
-       $(".menu").toggleClass("menuNotAtTop");
-    });
-
     $(window).resize(function(){
         $headerHeight = $(".menuPlacement").height();
         $menuHide = ($headerHeight / 4);
@@ -30,7 +26,8 @@
 
         if( ($headerHeight - $menuHide) <= $scrollDistance ){
             $(".menu").addClass("menuNotAtTop");
-        }if( ($headerHeight - $menuHide) > $scrollDistance ){
+        }
+        if( ($headerHeight - $menuHide) > $scrollDistance ){
             $(".menu").removeClass("menuNotAtTop");
         }
     });
