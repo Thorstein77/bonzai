@@ -8,7 +8,12 @@
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Kontakt os - Bonzai Media</title>
+
+    <meta name="description" content="Kontakt os for support eller køb af hjemmeside.
+    Du er også meget velkommen til at kontakte os hvis du har spørgsmål inden du er klar til at købe">
+
+    <link rel="canonical" href="http://kthor.dk/kontant">
     <?php
     require ("php/head.php");
     ?>
@@ -51,7 +56,7 @@ require ("php/menu.php");
             </g>
         </svg>
     </section>
-
+    <span id="anchorWrite"></span>
     <section class="contactInfo">
         <div class="flex">
             <div class="info">

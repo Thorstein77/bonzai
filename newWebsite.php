@@ -8,7 +8,12 @@
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Ny hjemmeside - Bonzai Media</title>
+
+    <meta name="description" content="Webdesign og udvikling af hjemmesider behøver ikke koste det hvide ud af øjnene.
+    Hos Bonsai Media får du utroligt meget for pengene. Her kan du læse mere om hvad du får for dine penge.">
+
+    <link rel="canonical" href="http://kthor.dk/ny-hjemmeside">
     <?php
     require ("php/head.php");
     ?>
@@ -37,7 +42,7 @@ require ("php/menu.php");
 
     <div class="design">
         <div class="img">
-            <img src="images/website_for-your-needs.jpg">
+            <img src="images/website_for-your-needs.jpg" alt="Webdesign for EnCoat">
         </div>
 
         <div class="text">
@@ -88,7 +93,7 @@ require ("php/menu.php");
             </p>
 
             <p>
-                Bestillingen starter ved at tage kontakt til os, derfra hjælper vi dig igennem processen.
+                Bestillingen starter ved at <a href="kontakt#anchorWrite">kontakte os,</a> derfra hjælper vi dig igennem processen.
             </p>
         </div>
 
@@ -137,7 +142,7 @@ require ("php/menu.php");
         </div>
     </div>
 </section>
-
+<span id="anchorPrice"></span>
 <section class="newPrice">
     <div class="flex">
         <div class="newPriceInfo">
@@ -233,7 +238,7 @@ require ("php/menu.php");
         </div>
     </div>
 </section>
-
+<span id="anchorWebshop"></span>
 <section class="newWebshop">
     <svg x="0px" y="0px" viewBox="0 0 1920 151" style="enable-background:new 0 0 1920 151;" xml:space="preserve" id="newWebshowSvgTop">
         <g>
@@ -292,7 +297,7 @@ require ("php/menu.php");
         </div>
 
         <div class="img">
-            <img src="images/website_webshop.jpg">
+            <img src="images/website_webshop.jpg" alt="Webshop - Audiovector">
         </div>
     </div>
 
@@ -306,7 +311,7 @@ require ("php/menu.php");
 <section class="newMobile">
     <div class="flex">
         <div class="img">
-            <img src="images/mobile.png">
+            <img src="images/mobile.png" alt="Mobilvenlig hjemmeside">
         </div>
 
         <div class="mobile">
@@ -325,7 +330,7 @@ require ("php/menu.php");
         </div>
     </div>
 </section>
-
+<span id="anchorAdministration"></span>
 <section class="newAministration">
     <div class="flex">
         <div class="administration">
@@ -352,11 +357,11 @@ require ("php/menu.php");
             </p>
 
             <p>
-                Har du brug for hjælp til noget du ikke selv kan løse? Så ring til os eller skriv til support.
+                Har du brug for hjælp til noget du ikke selv kan løse? Så ring til os eller <a href="contact.php#anchorWrite">skriv til support.</a>
             </p>
         </div>
 
-        <img src="images/website_adminstrator.jpg">
+        <img src="images/website_adminstrator.jpg" alt="WordPress administration">
     </div>
 </section>
 
