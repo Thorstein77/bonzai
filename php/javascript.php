@@ -3,7 +3,7 @@
 
     $("#burger").click(function(){
         $(".mobileMenu").toggleClass("mobileMenuShow");
-    })
+    });
 
     $window = $(window);
     $headerHeight = $(".menuPlacement").height();
@@ -15,6 +15,10 @@
     }if( ($headerHeight - $menuHide) > $scrollDistance ){
         $(".menu").removeClass("menuNotAtTop");
     }
+
+    $("#menuBackBtn").click(function(){
+       $(".menu").toggleClass("menuNotAtTop");
+    });
 
     $(window).resize(function(){
         $headerHeight = $(".menuPlacement").height();
@@ -83,11 +87,8 @@
             setTimeout(showSlides, 2000)
         }
         $(".firstDot").addClass(" active");
-    })
+    });
 
-</script>
-
-<script>
     function myMap() {
         var mapProp= {
             center:new google.maps.LatLng(55.639614,12.084784),

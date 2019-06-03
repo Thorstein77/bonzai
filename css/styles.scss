@@ -1311,7 +1311,12 @@ footer{
     background-color: $midToneBlue;
     font-size: 25pt;
     color: $deepOrange;
-    i{
+    .menuBackBtn{
+      position: fixed;
+      left: -150px;
+      right: -140px;
+    }
+    label{
       margin: 0 auto;
     }
     a{
@@ -1325,7 +1330,7 @@ footer{
       left: 0;
       right: 72.5%;
       background-color: $midToneBlue;
-      display: block;
+      display: none;
       z-index: 101;
       transition: 1s;
       color: $offWhite;
