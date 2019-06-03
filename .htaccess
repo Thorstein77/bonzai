@@ -5,4 +5,3 @@ RewriteEngine On
 RewriteRule ^ny-hjemmeside newWebsite.php
 RewriteRule ^referencer cases.php
 RewriteRule ^kontakt contact.php
-RewriteRule ^blog blog.php
