@@ -97,6 +97,7 @@ ul, ol {
   margin: 0; // Ingen ydre margen fra lister
   padding: 0; // Ingen indre margen fra lister
   list-style-position: inside; // List punkter står på linje
+  font-family: $textFont;
 }
 
 li {
@@ -116,15 +117,20 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+a{
+  font-weight: bold;
+  color: $midToneOrange;
+  text-decoration: none;
+}
 
 // header
 
 .headerMobile{
   position: fixed;
   top: 0;
-  bottom: 90vh;
   left: 0;
   right: 0;
+  height: 10vh;
   background-color: $midToneBlue;
   z-index: 100;
   .flex{
@@ -415,27 +421,232 @@ img {
     }
     .text{
       width: 90%;
-      margin: 20vw auto 10vw;
+      margin: 20vw auto 15vw;
+
+      p{
+        margin-bottom: 10px;
+      }
     }
   }
   svg{
-    bottom: -10.1vw;
+    bottom: -15.1vw;
+    g{
+      path{
+        fill: $lightBlue;
+      }
+    }
   }
 }
 .newProcess{
-
+  width: 100%;
+  background-color: $lightBlue;
+  .flex{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10vw 0;
+    .process{
+      margin: 0 0 10vw;
+      p{
+        margin-bottom: 10px;
+      }
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-gap: 15px;
+      .gridObject{
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        padding: 20px 30px;
+        background-color: $darkBlue;
+        color: $offWhite;
+        h4{
+          font-size: 12pt;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
 }
 .newPrice{
-
+  ul{
+    font-size: 10pt;
+    list-style: none;
+    li {
+      text-indent: 5px;
+    }
+    li:before {
+      content: " - ";
+      font-weight: bold;
+    }
+  }
+  .flex{
+    width: 90%;
+    margin: 10vw auto;
+    .newPriceInfo{
+      width: 100%;
+      p{
+        margin-bottom: 10px;
+      }
+      div{
+        margin-bottom: 10px;
+        p{
+          margin-bottom: 0;
+        }
+      }
+    }
+    .grid{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 5vw;
+      .gridObject{
+        width: 100%;
+        padding-top: 100%;
+        position: relative;
+        background-color: $midToneBlue;
+        .gridFlex{
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-family: $headlineFont;
+          color: $offWhite;
+          font-size: 25pt;
+          margin: 0 auto;
+          p{
+            margin-top: 10px;
+            font-size: 11pt;
+          }
+        }
+      }
+      .gridObjectOrange{
+        background-color: $midToneOrange;
+      }
+    }
+  }
 }
-.newWebshow{
+.newWebshop{
+  width: 100%;
+  position: relative;
+  background-color: $darkBlue;
+  color: $lightBlue;
+  svg{
+    g{
+      path{
+        fill: $offWhite;
+      }
+    }
+  }
+  #newWebshowSvgTop{
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  }
+  #newWebshowSvgBtm{
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+  }
+  .flex{
+    width: 90%;
+    margin: 0 auto;
+    .webshopInfo{
+      padding: 20vw 0;
+      width: 100%;
+      h2{
+        color: $lightBlue;
+      }
+      p{
+        margin-bottom: 10px;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
 
+        .gridObject{
+          background-color: $lightBlue;
+          width: 100%;
+          padding-top: 100%;
+          position: relative;
+          .flex{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: $headlineFont;
+            color: $offWhite;
+            font-size: 20pt;
+            p{
+              margin-top: 5px;
+              font-size: 8pt;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .gridObjectOrange{
+          background-color: $midToneOrange;
+        }
+      }
+    }
+    .img{
+      display: none;
+    }
+  }
 }
 .newMobile{
-
+  width: 100%;
+  .flex{
+    width: 90%;
+    margin: 10vw auto;
+    .img{
+      width: 80%;
+      margin: 0 auto 5vw;
+    }
+    .mobile{
+      width: 100%;
+      p{
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 .newAministration{
-
+  background-color: $midToneOrange;
+  width: 100%;
+  .flex{
+    width: 90%;
+    margin: 0 auto;
+    .administration{
+      padding: 10vw 0;
+      h2{
+        color: #000000;
+      }
+      p{
+        margin-bottom: 10px;
+      }
+    }
+    img{
+      display: none;
+    }
+  }
 }
 
 // contact
@@ -969,6 +1180,105 @@ footer{
       mask-size: 100%;
     }
   }
+  .newHeader{
+    @include header768;
+    .design{
+      position: relative;
+      display: flex;
+      flex-flow: nowrap row;
+      justify-content: flex-end;
+      .img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 45%;
+        img{
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .text{
+        width: 55%;
+        padding: 0 5vw;
+        margin: 10vw 0 15vw;
+        h2{
+          font-size: 25pt;
+        }
+      }
+    }
+    svg{
+      bottom: -0.1vw;
+    }
+  }
+  .newProcess{
+    .flex{
+      padding: 7vw 0 10vw;
+      .process{
+        margin: 0 0 5vw;
+      }
+    }
+  }
+  .newPrice{
+    .flex{
+      width: 90%;
+      display: flex;
+      flex-flow: nowrap row-reverse;
+      justify-content: space-between;
+      margin: 10vw auto 5vw;
+      .newPriceInfo{
+        margin: 0;
+        width: 50%;
+      }
+      .grid{
+        width: 45%;
+        grid-gap: 10px;
+        height: 0;
+        .gridObject{
+          .gridFlex{
+            font-size: 35pt;
+            p{
+              font-weight: bold;
+              font-size: 12pt;
+            }
+          }
+        }
+      }
+    }
+  }
+  .newWebshop{
+    .flex{
+      position: relative;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      width: 100%;
+      .webshopInfo{
+        padding: 15vw 5vw 10vw;
+        width: 55%;
+        .grid{
+          padding-top: 20px;
+        }
+      }
+      .img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 40%;
+        img{
+          height: 100%;
+          width: auto;
+          object-fit: cover;
+        }
+      }
+    }
+    svg{
+      z-index: 10;
+    }
+  }
   .contactHeader{
     @include header768;
     .flex{
@@ -986,6 +1296,25 @@ footer{
           }
         }
       }
+    }
+  }
+  .newMobile{
+    .flex{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      .img{
+        width: 35%;
+        margin: 0;
+      }
+      .mobile{
+        width: 60%;
+      }
+    }
+  }
+  .newAministration{
+    .flex{
+      width: 50%;
     }
   }
   .contactInfo{
@@ -1114,7 +1443,9 @@ footer{
     .flex{
       display: block;
       .menuPlacement{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -1314,6 +1645,109 @@ footer{
       mask-size: 100%;
     }
   }
+  .newHeader{
+    @include header992;
+    .headerPush{
+      height: 75vw;
+    }
+    .design{
+      .text{
+        padding: 0 10vw;
+        p{
+          font-size: 12pt;
+        }
+      }
+    }
+  }
+  .newProcess{
+    @include webPush;
+    .flex{
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+      .process{
+        width: 45%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0 5%;
+        p{
+          font-size: 12pt;
+        }
+      }
+      .grid{
+        width: 50%;
+      }
+    }
+  }
+  .newPrice{
+    @include webPush;
+    .flex{
+      .newPriceInfo{
+        padding: 0 5%;
+        p{
+          font-size: 12pt;
+        }
+        ul{
+          font-size: 12pt;
+        }
+      }
+    }
+  }
+  .newWebshop{
+    @include webPush;
+    .flex{
+      .webshopInfo{
+        p{
+          font-size: 12pt;
+        }
+      }
+      .img{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .newMobile{
+    @include webPush;
+    .flex{
+      .mobile{
+        padding: 0 5%;
+        p{
+          font-size: 12pt;
+        }
+      }
+    }
+  }
+  .newAministration{
+    @include webPush;
+    .flex{
+      display: flex;
+      flex-flow: nowrap row;
+      justify-content: space-between;
+      width: 100%;
+      .administration{
+        width: 45%;
+        padding: 1vw 5%;
+        p{
+          font-size: 12pt;
+        }
+      }
+      img{
+        display: block;
+        width: 55%;
+        max-height: 55vw;
+        -webkit-mask-image: url(../images/svg/bReverse.svg);
+        mask-image: url(../images/svg/bReverse.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+      }
+    }
+  }
   .contactHeader{
     @include header992;
     .flex{
@@ -1456,7 +1890,7 @@ footer{
   @mixin header1200(){
     .flex{
       .headerContent{
-        padding: 35vh 0;
+        padding: 19vw 0;
       }
     }
   }
@@ -1479,6 +1913,61 @@ footer{
             padding: 20px;
           }
         }
+      }
+    }
+  }
+  .newHeader{
+    @include header1200;
+    .headerPush{
+      height: 50vw;
+    }
+    .design{
+      .text{
+        margin: 12vw 0 15vw;
+      }
+    }
+  }
+  .newProcess{
+    .flex{
+      .process{
+        padding: 0 7%;
+      }
+    }
+  }
+  .newPrice{
+    .flex{
+      margin: 10vw auto 10vw;
+    }
+  }
+  .newWebshop{
+    .flex{
+      .webshopInfo{
+        .grid{
+          .gridObject{
+            .flex{
+              font-size: 30pt;
+              p{
+                font-size: 12pt;
+                font-weight: bold;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .newMobile{
+    .flex{
+      .mobile{
+        padding: 0 5% 0 14%;
+      }
+    }
+  }
+  .newAministration{
+    .flex{
+      .administration{
+        padding: 5vw 5%;
       }
     }
   }
@@ -1572,6 +2061,43 @@ footer{
       padding: 8vw 13% 0 0;
     }
   }
+  .newHeader{
+    .headerPush{
+      height: 45vw;
+    }
+  }
+  .newProcess{
+    .flex{
+      width: 80%;
+    }
+  }
+  .newPrice{
+    .flex{
+      margin: 10vw auto 10vw;
+      .grid{
+        width: 35%;
+        margin-left: 10%;
+        grid-gap: 25px;
+      }
+    }
+  }
+  .newMobile{
+    .flex{
+      justify-content: space-around;
+      .img{
+        width: 25%;
+      }
+    }
+  }
+  .newAministration{
+    .flex{
+      .administration{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+      }
+    }
+  }
   .cases{
     .grid{
       grid-gap: 80px;
@@ -1609,11 +2135,10 @@ footer{
   @mixin header1920(){
     .flex{
       .headerContent{
-        padding: 40vh 0;
+        padding: 21vw 0;
       }
     }
   }
-
   .menuBack{
     font-size: 40pt;
     .menu{
@@ -1637,6 +2162,7 @@ footer{
     margin: 8vw 0 0 auto;
     .flex{
       width: 70%;
+      margin: 10vw auto 5vw;
     }
     .grid{
       margin: 20px auto 10vw;
@@ -1654,6 +2180,49 @@ footer{
   .indexControl{
     .indexControlInfo{
       padding: 11vw 21% 0 0;
+    }
+  }
+  .newHeader{
+    @include header1920;
+    .headerPush{
+      height: 50vw;
+    }
+    .design{
+      .text{
+        margin: 12vw 0 15vw;
+      }
+    }
+  }
+  .newProcess{
+    .flex{
+      justify-content: space-around;
+      .grid{
+        width: 40%;
+      }
+    }
+  }
+  .newPrice{
+    .flex{
+
+      .newPriceInfo{
+        padding: 0 9%;
+        margin-right: 5%;
+      }
+    }
+  }
+  .newWebshop{
+
+  }
+  .newMobile{
+    .flex{
+      width: 70%;
+    }
+  }
+  .newAministration{
+    .flex{
+      .administration{
+        padding: 5vw 10%;
+      }
     }
   }
   .contactHeader{
@@ -1698,12 +2267,27 @@ footer{
   @mixin header2560(){
     .flex{
       .headerContent{
-        padding: 45vh 0;
+        padding: 23vw 0;
       }
     }
   }
   .indexHeader{
     @include header2560;
+  }
+  .newHeader{
+    @include header2560;
+    .headerPush{
+      height: 50vw;
+    }
+  }
+  .newPrice{
+    .flex{
+      width: 70%;
+      justify-content: space-around;
+      .grid{
+        margin: 0;
+      }
+    }
   }
   .contactHeader{
     @include header2560;
