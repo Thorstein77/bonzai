@@ -9,7 +9,12 @@
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
     <title>Bonzai Media</title>
+    <!-- beskrivelse der ses under titlen på f.eks. Google søgninger -->
+    <meta name="description" content="Webdesign og udvikling af hjemmesider. Skal du bruge en ny hjemmeside eller webshop?
+    Kontakt os i dag, så giver vi dig et godt tilbud, der opfylder dine krav og behov.">
 
+
+    <link rel="canonical" href="http://kthor.dk">
     <?php
     require ("php/head.php");
     ?>
@@ -64,7 +69,7 @@ require ("php/menu.php");
                 </p>
 
                 <p>
-                    Vores løsninger har en bindingsperiode på 1 år, med en mindstepris <a href="newWebsite.php#anchorPrice">FRA 12.000kr.</a>
+                    Vores løsninger har en bindingsperiode på 1 år, med en mindstepris <a href="ny-hjemmeside#anchorPrice">FRA 12.000kr.</a>
                 </p>
             </div>
 
@@ -79,13 +84,13 @@ require ("php/menu.php");
 
                 <div>
                     <p>
-                        Vi laver hjemmesider som er specielt designet til dig, med det du har brug for. Du kan læse mere om vores hjemmeside løsninger <a href="newWebsite.php">her.</a>
+                        Vi laver hjemmesider som er specielt designet til dig, med det du har brug for. Du kan læse mere om vores hjemmeside løsninger <a href="ny-hjemmeside">her.</a>
                     </p>
                 </div>
 
                 <div>
                     <p>
-                        Vi kan også levere en webshop, enten til din nuværende eller nye hjemmeside. Du kan læse mere om vores webshop løsninger <a href="newWebsite.php#anchorWebshop">her.</a>
+                        Vi kan også levere en webshop, enten til din nuværende eller nye hjemmeside. Du kan læse mere om vores webshop løsninger <a href="ny-hjemmeside#anchorWebshop">her.</a>
                     </p>
                 </div>
             </div>
@@ -192,7 +197,7 @@ require ("php/menu.php");
             </p>
 
             <p>
-                Her er nogle af de kunder, som vi har arbejdet med, og <a href="cases.php">her</a> kan du se eksempler på nogle af de cases vi har lavet
+                Her er nogle af de kunder, som vi har arbejdet med, og <a href="referencer">her</a> kan du se eksempler på nogle af de cases vi har lavet
             </p>
         </div>
 
@@ -259,11 +264,11 @@ require ("php/menu.php");
             </p>
 
             <p>
-                Skulle noget gå galt, kan du altid <a href="contact.php#anchorWrite">ringe eller skrive til os.</a>
+                Skulle noget gå galt, kan du altid <a href="kontakt#anchorWrite">ringe eller skrive til os.</a>
             </p>
 
             <p>
-                Du kan læse mere om administration og support <a href="newWebsite.php#anchorAdministration">her.</a>
+                Du kan læse mere om administration og support <a href="ny-hjemmeside#anchorAdministration">her.</a>
             </p>
         </div>
 

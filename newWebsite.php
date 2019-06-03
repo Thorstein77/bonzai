@@ -8,7 +8,12 @@
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Ny hjemmeside - Bonzai Media</title>
+
+    <meta name="description" content="Webdesign og udvikling af hjemmesider behøver ikke koste det hvide ud af øjnene.
+    Hos Bonsai Media får du utroligt meget for pengene. Her kan du læse mere om hvad du får for dine penge.">
+
+    <link rel="canonical" href="http://kthor.dk/ny-hjemmeside">
     <?php
     require ("php/head.php");
     ?>
@@ -88,7 +93,7 @@ require ("php/menu.php");
             </p>
 
             <p>
-                Bestillingen starter ved at <a href="contact.php#anchorWrite">kontakte os,</a> derfra hjælper vi dig igennem processen.
+                Bestillingen starter ved at <a href="kontakt#anchorWrite">kontakte os,</a> derfra hjælper vi dig igennem processen.
             </p>
         </div>
 

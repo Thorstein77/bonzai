@@ -124,9 +124,9 @@ a{
 .headerMobile{
   position: fixed;
   top: 0;
-  bottom: 90vh;
   left: 0;
   right: 0;
+  height: 10vh;
   background-color: $midToneBlue;
   z-index: 100;
   .flex{

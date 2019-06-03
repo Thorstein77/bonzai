@@ -8,7 +8,12 @@
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Referencer - Bonzai Media</title>
+
+    <meta name="description" content="Hvorfor skal du vælge Bonsai Media? Her kan du se eksempler på
+    noget af vores tidligere arbejde.">
+
+    <link rel="canonical" href="http://kthor.dk/referencer">
     <?php
     require ("php/head.php");
     ?>

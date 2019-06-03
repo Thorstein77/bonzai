@@ -1,16 +1,16 @@
 <footer>
     <div class="footerGrid">
-        <div class="footerContact">
+        <div class="footerContact" itemscope itemtype="http://schema.org/LocalBusiness">
             <h4>
                 Klar til at komme i gang?
             </h4>
 
-            <a href="mailto:info@bonzaimedia.dk">
+            <a href="mailto:info@bonzaimedia.dk" itemprop="email">
                 - Kontakt os!
             </a>
 
             <p>
-                Tlf: 46 34 09 09
+                Tlf: <span itemprop="telephone">46 34 09 09</span>
             </p>
 
             <p>
