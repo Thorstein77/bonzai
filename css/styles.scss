@@ -31,6 +31,10 @@ $offWhite: #fffef9;
   color: $offWhite;
   border-radius: 10px;
 }
+@mixin buttonHover(){
+  cursor: pointer;
+  background-color: $midToneOrange;
+}
 
 @mixin header(){
   position: relative;
@@ -675,6 +679,9 @@ a{
           border-radius: 5px;
           margin-right: 10%;
         }
+        .newsButton:hover{
+          @include buttonHover;
+        }
         input{
           margin-top: 15px;
         }
@@ -716,10 +723,12 @@ a{
 
       }
       .contactSubmit{
-        background-color: $deepOrange;
-        color: $offWhite;
-        border: $deepOrange 2px solid;
+        @include orangeButton;
+
         width: 40%;
+      }
+      .contactSubmit:hover{
+        @include buttonHover;
       }
     }
   }
@@ -872,8 +881,7 @@ a{
         }
 
         #blogScroll:hover {
-          background-color: $midToneOrange;
-          cursor: pointer;
+          @include buttonHover;
         }
       }
       .btnBack{
@@ -885,8 +893,7 @@ a{
         padding: 5px 0;
       }
       .btnBack:hover{
-        cursor: pointer;
-        background-color: $midToneOrange;
+        @include buttonHover;
       }
     }
     .blogSneakPeak {
@@ -915,8 +922,7 @@ a{
           padding: 5px 0;
         }
         button:hover {
-          cursor: pointer;
-          background-color: $midToneOrange;
+          @include buttonHover;
         }
       }
       hr.blogLine {
@@ -1010,8 +1016,7 @@ a{
         padding: 5px 0;
       }
       button:hover {
-        cursor: pointer;
-        background-color: $midToneOrange;
+        @include buttonHover;
       }
     }
   }
@@ -1087,6 +1092,9 @@ footer{
           width: 60%;
           padding: 8px;
           font-size: 12pt;
+        }
+        .newsButton:hover{
+          @include buttonHover;
         }
       }
     }
@@ -1961,6 +1969,9 @@ footer{
             @include orangeButton;
             width: 100%;
           }
+          .newsButton:hover{
+            @include buttonHover;
+          }
         }
       }
     }
@@ -2114,6 +2125,9 @@ footer{
           .newsButton{
             @include orangeButton;
             width: 100%;
+          }
+          .newsButton:hover{
+            @include buttonHover;
           }
         }
       }

@@ -44,7 +44,7 @@ require ("php/menu.php");
         </g>
             </svg>
 </section>
-
+<span id="produkt-billeder"></span>
 <section class="blog">
     <div class="blogContent">
         <div class="blogTitles">
