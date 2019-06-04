@@ -26,8 +26,7 @@ require ("php/menu.php");
 
             <div class="headerContent">
                 <h1>Vi holder dig opdateret</h1>
-
-                <p>Vi giver dig den information du behøver, til at holde din hjemmeside up-to-date</p>
+                <p>Vi giver dig den information du behøver,<br> til at holde din hjemmeside up-to-date</p>
             </div>
         </div>
 
@@ -72,7 +71,7 @@ require ("php/menu.php");
                     <div class="blogDate">
                         <p><i class="far fa-calendar-alt"></i> 11. juni 2019</p>
                     </div>
-                    <h4>Gør din wenshop lækker<br>– 10 tips til bedre produktbilleder</h4>
+                    <h4>Gør din webshop lækker<br>– 10 tips til bedre produktbilleder</h4>
                     <p>Lyssætning, sans for detalje og redigering af billeder er alle ting som kan hjælpe dig, med at forbedre dine produktbilleder.</p>
                     <button onclick="window.location.href = 'blogPost.php';">Læs bloggen</button>
                 </article>
