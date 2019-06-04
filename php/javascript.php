@@ -1,9 +1,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+<script>
 
     $("#burger").click(function(){
         $(".mobileMenu").toggleClass("mobileMenuShow");
-    })
+    });
 
     $window = $(window);
     $headerHeight = $(".menuPlacement").height();
@@ -26,13 +26,20 @@
 
         if( ($headerHeight - $menuHide) <= $scrollDistance ){
             $(".menu").addClass("menuNotAtTop");
-        }if( ($headerHeight - $menuHide) > $scrollDistance ){
+        }
+        if( ($headerHeight - $menuHide) > $scrollDistance ){
             $(".menu").removeClass("menuNotAtTop");
         }
     });
 
     $(document).ready(function(){
         $(".menu").removeClass("menuLoad");
+
+        $('#blogScroll').click(function () {
+            $('.blogList').animate({
+                scrollTop: '+=100'
+            }, 100);
+        });
 
         // Slideshow
         var slidesWidth = ($(".slideContainer").outerWidth() / $(".slideObject").outerWidth());
@@ -83,11 +90,8 @@
             setTimeout(showSlides, 2000)
         }
         $(".firstDot").addClass(" active");
-    })
+    });
 
-</script>
-
-<script>
     function myMap() {
         var mapProp= {
             center:new google.maps.LatLng(55.639614,12.084784),
@@ -98,13 +102,3 @@
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5edFMHjjsQfptoPzIVLDpHPLIvBfxyjY&callback=myMap"></script>
-
-<script>
-    $(document).ready(function () {
-        $('#blogScroll').click(function () {
-            $('.blogList').animate({
-                scrollTop: '+=100'
-            }, 100);
-        });
-    });
-</script>

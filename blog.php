@@ -35,7 +35,7 @@ require ("php/menu.php");
                 <style type="text/css">
                     .st0{display:none;}
                 </style>
-            <g id="Lag_2" class="st0">
+            <g class="st0">
                 <rect y="-930" class="st1" width="549" height="1076"/>
             </g>
             <g>
@@ -91,7 +91,7 @@ require ("php/menu.php");
             <style type="text/css">
                 .st0{display:none;}
             </style>
-            <g id="Lag_2" class="st0">
+            <g class="st0">
                 <rect y="-930" class="st1" width="549" height="1076"/>
             </g>
             <g>

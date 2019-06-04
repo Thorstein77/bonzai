@@ -1,6 +1,6 @@
 <header class="headerMobile">
     <div class="flex">
-        <input type="button" class="burger" id="burger" name="burger">
+        <input type="button" class="burger" id="burger" name="burger" value="mobMenu">
         <label for="burger" class="burgerMenu">
             <i class="fas fa-bars"></i>
         </label>
@@ -78,7 +78,10 @@
 </nav>
 
 <aside class="menuBack">
-    <i class="fas fa-chevron-right"></i>
+    <input type="checkbox" name="menuBackBtn" class="menuBackBtn" id="menuBackBtn">
+    <label for="menuBackBtn">
+        <i class="fas fa-chevron-right"></i>
+    </label>
 
     <nav class="menu menuLoad">
         <div class="logoImg">
