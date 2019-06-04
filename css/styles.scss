@@ -1103,13 +1103,13 @@ footer{
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
-  @mixin header768(){
-    .flex{
-      .headerContent{
-        h1{
+  @mixin header768() {
+    .flex {
+      .headerContent {
+        h1 {
           font-size: 30pt;
         }
-        p{
+        p {
           font-size: 22pt;
 
         }
@@ -1117,44 +1117,44 @@ footer{
     }
   }
 
-  h2, h3{
+  h2, h3 {
     font-size: 30pt;
   }
-  .headerMobile{
-    .flex{
-      .burgerMenu{
+  .headerMobile {
+    .flex {
+      .burgerMenu {
         font-size: 35pt;
       }
-      .logoMob{
+      .logoMob {
         width: 25%;
       }
     }
   }
-  .mobileMenu{
-    .flex{
-      .teamIcon{
+  .mobileMenu {
+    .flex {
+      .teamIcon {
         width: 7%;
       }
-      .someIcons{
+      .someIcons {
         width: 30%;
       }
     }
   }
-  .indexHeader{
+  .indexHeader {
     @include header768;
   }
-  .indexSolutions{
-    .flex{
+  .indexSolutions {
+    .flex {
       display: flex;
       justify-content: space-between;
       flex-flow: row nowrap;
-      .indexSolutionsInfo{
+      .indexSolutionsInfo {
         width: 45%;
-        p{
+        p {
           margin-bottom: 10px;
         }
       }
-      .grid{
+      .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -1163,50 +1163,50 @@ footer{
         width: 50%;
       }
     }
-    h3{
+    h3 {
       width: 100%;
     }
-    .grid{
+    .grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-gap: 10px;
       width: 90%;
       margin: 20px auto 12vw;
-      .gridObject{
-        p{
+      .gridObject {
+        p {
           font-size: 11pt;
         }
       }
-      #gridObject3{
+      #gridObject3 {
         grid-area: 2 / 1 / 3 / 2;
       }
-      #gridObject4{
+      #gridObject4 {
         grid-area: 2 / 2 / 3 / 3;
       }
-      #gridObject5{
+      #gridObject5 {
         grid-area: 1 / 3 / 2 / 4;
       }
-      #gridObject6{
+      #gridObject6 {
         grid-area: 1 / 4 / 2 / 5;
       }
     }
-    svg{
+    svg {
       bottom: -12.1vw;
     }
   }
-  .indexExperience{
-    .indexExperienceInfo{
+  .indexExperience {
+    .indexExperienceInfo {
       width: 55%;
     }
-    .slide{
-      .slideContainer{
+    .slide {
+      .slideContainer {
         margin: 0 auto;
-        #slideLength{
-          .slideObject{
+        #slideLength {
+          .slideObject {
             width: 30vw;
           }
         }
-        #slideDots{
+        #slideDots {
           margin-bottom: 20px;
           .dot {
             width: 15px;
@@ -1217,18 +1217,18 @@ footer{
       }
     }
   }
-  .indexControl{
+  .indexControl {
     width: 100%;
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
 
-    .indexControlInfo{
+    .indexControlInfo {
       width: 45%;
       margin: 30px 0;
       padding: 0 5% 0 0;
     }
-    img{
+    img {
       width: 50%;
       max-height: 55vw;
       -webkit-mask-image: url(../images/svg/bNormal.svg);
@@ -1239,65 +1239,65 @@ footer{
       mask-size: 100%;
     }
   }
-  .newHeader{
+  .newHeader {
     @include header768;
-    .design{
+    .design {
       position: relative;
       display: flex;
       flex-flow: nowrap row;
       justify-content: flex-end;
-      .img{
+      .img {
         position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         display: block;
         width: 45%;
-        img{
+        img {
           height: 100%;
           object-fit: cover;
         }
       }
-      .text{
+      .text {
         width: 55%;
         padding: 0 5vw;
         margin: 10vw 0 15vw;
-        h2{
+        h2 {
           font-size: 25pt;
         }
       }
     }
-    svg{
+    svg {
       bottom: -0.1vw;
     }
   }
-  .newProcess{
-    .flex{
+  .newProcess {
+    .flex {
       padding: 7vw 0 10vw;
-      .process{
+      .process {
         margin: 0 0 5vw;
       }
     }
   }
-  .newPrice{
-    .flex{
+  .newPrice {
+    .flex {
       width: 90%;
       display: flex;
       flex-flow: nowrap row-reverse;
       justify-content: space-between;
       margin: 10vw auto 5vw;
-      .newPriceInfo{
+      .newPriceInfo {
         margin: 0;
         width: 50%;
       }
-      .grid{
+      .grid {
         width: 45%;
         grid-gap: 10px;
         height: 0;
-        .gridObject{
-          .gridFlex{
+        .gridObject {
+          .gridFlex {
             font-size: 35pt;
-            p{
+            p {
               font-weight: bold;
               font-size: 12pt;
             }
@@ -1306,50 +1306,50 @@ footer{
       }
     }
   }
-  .newWebshop{
-    .flex{
+  .newWebshop {
+    .flex {
       position: relative;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       width: 100%;
-      .webshopInfo{
+      .webshopInfo {
         padding: 15vw 5vw 10vw;
         width: 55%;
-        .grid{
+        .grid {
           padding-top: 20px;
         }
       }
-      .img{
+      .img {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         display: block;
         width: 40%;
-        img{
+        img {
           height: 100%;
           width: auto;
           object-fit: cover;
         }
       }
     }
-    svg{
+    svg {
       z-index: 10;
     }
   }
-  .contactHeader{
+  .contactHeader {
     @include header768;
-    .flex{
-      .headerContent{
-        form{
+    .flex {
+      .headerContent {
+        form {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-          .newsEmail{
+          .newsEmail {
             width: 40%;
           }
-          .newsButton{
+          .newsButton {
             width: 40%;
             margin-right: 0;
           }
@@ -1357,70 +1357,70 @@ footer{
       }
     }
   }
-  .newMobile{
-    .flex{
+  .newMobile {
+    .flex {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      .img{
+      .img {
         width: 35%;
         margin: 0;
       }
-      .mobile{
+      .mobile {
         width: 60%;
       }
     }
   }
-  .newAministration{
-    .flex{
+  .newAministration {
+    .flex {
       width: 50%;
     }
   }
-  .contactInfo{
-    .flex{
+  .contactInfo {
+    .flex {
       flex-direction: row;
       justify-content: space-between;
-      .info{
+      .info {
         width: 40%;
         margin: 0;
       }
-      .contactForm{
+      .contactForm {
         width: 50%;
         margin: 0;
       }
     }
   }
-  .contactLocation{
-    svg{
+  .contactLocation {
+    svg {
       z-index: 90;
     }
-    .flex{
+    .flex {
       flex-direction: row;
       justify-content: space-between;
-      .location{
+      .location {
         width: 40%;
-        h2{
+        h2 {
           width: 100%;
         }
       }
-      .mapSize{
+      .mapSize {
         width: 50%;
         padding-top: 60%;
       }
     }
   }
-  .casesHeader{
+  .casesHeader {
     @include header768;
   }
-  .cases{
-    .grid{
+  .cases {
+    .grid {
       width: 90%;
       margin: 10vw auto;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-gap: 30px;
-      .gridObject{
-        a{
+      .gridObject {
+        a {
           margin-top: 10px;
           font-size: 15pt;
         }
@@ -1428,63 +1428,62 @@ footer{
     }
   }
   //blog
-  .blogHeader{
+  .blogHeader {
     @include header768;
   }
-    .blogContent {
-      width: 70%;
-      margin: 0 auto;
-      .blogSneakPeak{
-        padding: 50px 0 80px 0;
-      }
-      #post{
-        h5{
-          margin-top: 16px;
-        }
+  .blogContent {
+    width: 70%;
+    margin: 0 auto;
+    .blogSneakPeak {
+      padding: 50px 0 80px 0;
+    }
+    #post {
+      h5 {
+        margin-top: 16px;
       }
     }
   }
-  .bonzaiNews{
-    .bonzaiNewsFlex{
+  .bonzaiNews {
+    .bonzaiNewsFlex {
       width: 60%;
     }
   }
-  footer{
-    .footerGrid{
+  footer {
+    .footerGrid {
       grid-template-rows: 1fr 2fr;
       grid-gap: 20px;
       font-size: 20pt;
-      a{
+      a {
         color: $deepOrange;
         text-decoration: none;
       }
-      .footerContact{
+      .footerContact {
         font-size: 16pt;
-        a{
+        a {
           font-size: 18pt;
         }
-        p{
+        p {
           font-size: 16pt;
         }
       }
-      .footerLinks{
+      .footerLinks {
         font-size: 30pt;
-        .footerSome{
+        .footerSome {
           font-size: 30pt;
 
         }
       }
-      .footerNewsletter{
-        form{
-          h4{
+      .footerNewsletter {
+        form {
+          h4 {
             width: 75%;
             margin-left: auto;
             margin-right: auto;
           }
-          .newsEmail{
+          .newsEmail {
             width: 60%;
           }
-          .newsButton{
+          .newsButton {
             @include orangeButton;
             width: 40%;
           }
@@ -1492,7 +1491,7 @@ footer{
       }
     }
   }
-
+}
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -1561,6 +1560,11 @@ footer{
       text-decoration: none;
       color: $offWhite;
     }
+    a:hover{
+      cursor: pointer;
+      color: $deepOrange;
+
+    }
     .menu{
       position: fixed;
       top: 0;
@@ -1574,7 +1578,7 @@ footer{
       color: $offWhite;
       font-weight: bold;
       font-family: $textFont;
-      font-size: 13pt;
+      font-size: 12pt;
       line-height: 175%;
       .logoImg{
         width: 63%;
@@ -2140,7 +2144,7 @@ footer{
   .menuBack{
     font-size: 25pt;
     .menu{
-      font-size: 17pt;
+      font-size: 16pt;
       .flex{
         .teamIcon{
           width: 32px;

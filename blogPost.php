@@ -9,6 +9,12 @@
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
     <title>Artikel - Blog - Bonzai Media</title>
+
+    <meta name="description" content="Syntes du ikke dine produkt billeder sidder lige i skabet?
+    Her er 10 råd til at tage bedre billeder af dine produkter.">
+
+
+    <link rel="canonical" href="http://kthor.dk/artikel">
     <?php
     require ("php/head.php");
     ?>

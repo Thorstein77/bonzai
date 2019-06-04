@@ -9,6 +9,12 @@
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
     <title>Blog - Bonzai Media</title>
+
+    <meta name="description" content="Her ligger vi blogindlæg op hver anden uge.
+    Det kan f.eks. være artikler der omhandler produkt billeder eller hvorvidt e-mærket er rigtigt for dig.">
+
+
+    <link rel="canonical" href="http://kthor.dk/blog">
     <?php
     require ("php/head.php");
     ?>
