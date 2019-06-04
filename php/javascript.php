@@ -1,5 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+<script>
 
     $("#burger").click(function(){
         $(".mobileMenu").toggleClass("mobileMenuShow");
@@ -34,6 +34,12 @@
 
     $(document).ready(function(){
         $(".menu").removeClass("menuLoad");
+
+        $('#blogScroll').click(function () {
+            $('.blogList').animate({
+                scrollTop: '+=100'
+            }, 100);
+        });
 
         // Slideshow
         var slidesWidth = ($(".slideContainer").outerWidth() / $(".slideObject").outerWidth());
@@ -96,13 +102,3 @@
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5edFMHjjsQfptoPzIVLDpHPLIvBfxyjY&callback=myMap"></script>
-
-<script>
-    $(document).ready(function () {
-        $('#blogScroll').click(function () {
-            $('.blogList').animate({
-                scrollTop: '+=100'
-            }, 100);
-        });
-    });
-</script>
