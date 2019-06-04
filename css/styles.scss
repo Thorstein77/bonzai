@@ -89,6 +89,10 @@ h2, h3{
   font-size: 22pt;
 }
 
+h4{
+  font-size: 16pt;
+}
+
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
   padding: 0; // Ingen indre margen fra lister
@@ -810,6 +814,209 @@ a{
     }
   }
 }
+
+//blog
+.blogHeader{
+  @include header;
+  .flex{
+    .headerContent{
+      // skift billede
+      background: url("../images/banner-blog.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+.blog {
+  background-color: $offWhite;
+  position: relative;
+  margin: 10vw 0 0;
+  .blogContent {
+    display: block;
+    .blogTitles {
+      width: 90%;
+      margin: 0 auto;
+      .blogAll {
+        h4 {
+          color: $lightBlue;
+          background-color: $darkBlue;
+          text-align: center;
+          padding: 5px 0;
+        }
+        .blogList {
+          background-color: $lightBlue;
+          overflow: auto;
+          height: 140px;
+          ul {
+            list-style-type: none;
+            li {
+              padding: 6px 10px;
+              border-bottom: 1.5px solid $darkBlue;
+              a {
+                text-decoration: none;
+                font-family: $textFont;
+                color: black;
+              }
+              a:hover {
+                color: $deepOrange;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        #blogScroll {
+          @include orangeButton;
+          width: 100%;
+          padding: 10px 0;
+          border-radius: 0 0 4px 4px;
+          font-family: $textFont;
+        }
+
+        #blogScroll:hover {
+          background-color: $midToneOrange;
+          cursor: pointer;
+        }
+      }
+      .btnBack{
+        @include orangeButton;
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+        margin: 20px auto;
+        padding: 5px 0;
+      }
+      .btnBack:hover{
+        cursor: pointer;
+        background-color: $midToneOrange;
+      }
+    }
+    .blogSneakPeak {
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px 0 50px 0;
+      h2 {
+        text-align: center;
+      }
+      article {
+        padding: 6px 0;
+        .blogDate {
+          color: #666666;
+          margin-bottom: 8px;
+        }
+        p {
+          margin-top: 5px;
+        }
+        button {
+          @include orangeButton;
+          width: 80%;
+          border-radius: 4px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 15px;
+          padding: 5px 0;
+        }
+        button:hover {
+          cursor: pointer;
+          background-color: $midToneOrange;
+        }
+      }
+      hr.blogLine {
+        border: 1px solid $darkBlue;
+        margin: 20px 0 15px 0;
+      }
+    }
+    #post{
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 50px;
+      .blogDate {
+        color: #666666;
+        margin-bottom: 8px;
+      }
+      h2 {
+        color: black;
+      }
+      h3 {
+        color: black;
+        font-size: 20pt;
+      }
+      h4 {
+        font-family: $textFont;
+        font-size: 14pt;
+        font-weight: normal;
+        margin-top: 10px;
+      }
+      h5{
+        font-family: $textFont;
+        font-size: 12pt;
+        margin-top: 10px;
+      }
+      p {
+        font-family: $textFont;
+        font-size: 10pt;
+      }
+      img{
+        margin-top: 10px;
+      }
+      .imgFlex{
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+  svg{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    g{
+      path{
+        fill: $darkBlue;
+      }
+    }
+  }
+}
+
+.bonzaiNews {
+  background-color: $darkBlue;
+  padding: 50px 0 20px 0;
+  h2 {
+    text-align: center;
+    color: $lightBlue !important;
+  }
+  .bonzaiNewsFlex {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0 30px 0;
+    article {
+      padding: 15px 10%;
+      background-color: $lightBlue;
+      margin-bottom: 20px;
+      .blogDate {
+        color: #666666;
+        margin-bottom: 8px;
+      }
+      p {
+        margin-top: 5px;
+      }
+      button {
+        @include orangeButton;
+        width: 80%;
+        border-radius: 4px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px 0;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: $midToneOrange;
+      }
+    }
+  }
+}
+
 // footer
 footer{
   width: 100%;
@@ -896,6 +1103,7 @@ footer{
         }
         p{
           font-size: 22pt;
+
         }
       }
     }
@@ -1211,6 +1419,28 @@ footer{
       }
     }
   }
+  //blog
+  .blogHeader{
+    @include header768;
+  }
+    .blogContent {
+      width: 70%;
+      margin: 0 auto;
+      .blogSneakPeak{
+        padding: 50px 0 80px 0;
+      }
+      #post{
+        h5{
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .bonzaiNews{
+    .bonzaiNewsFlex{
+      width: 60%;
+    }
+  }
   footer{
     .footerGrid{
       grid-template-rows: 1fr 2fr;
@@ -1254,7 +1484,7 @@ footer{
       }
     }
   }
-}
+
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -1615,6 +1845,80 @@ footer{
   .cases{
     @include webPush;
   }
+  .blogHeader {
+    @include header992;
+  }
+  .blog{
+    @include webPush;
+    margin: 0 0 0 auto;
+    .blogContent{
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      width: 90%;
+      margin: 10vw 0 5vw 5vw;
+      .blogTitles{
+        width: 40%;
+      }
+      .blogSneakPeak {
+        width: 55%;
+        padding: 0;
+        h2 {
+          text-align: left;
+        }
+        article {
+          button {
+            width: 50%;
+          }
+          h4{
+            font-size: 18pt;
+          }
+          p{
+            font-size: 12pt;
+          }
+        }
+      }
+      .blogTitles{
+        margin-top: 80px;
+        margin-bottom: 70px;
+        .blogAll{
+          .blogList{
+            height: 246px;
+          }
+        }
+      }
+      #post{
+        width: 50%;
+        padding-top: 0;
+        h3{
+          font-size: 22pt;
+        }
+        h4{
+          font-size: 16pt;
+        }
+        h5{
+          font-size: 14pt;
+          margin-top: 20px;
+        }
+        p{
+          font-size: 12pt;
+        }
+      }
+    }
+    svg{
+      bottom: -5.2vw;
+    }
+  }
+  .bonzaiNews{
+    @include webPush;
+    .bonzaiNewsFlex{
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      article{
+        width: 48%;
+      }
+    }
+  }
   footer{
     @include webPush;
     .footerGrid{
@@ -1772,6 +2076,20 @@ footer{
   .casesHeader{
     @include header1200;
   }
+  .blogHeader{
+    @include header1200;
+  }
+  .blog{
+    .blogContent{
+      #post{
+        .imgFlex{
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-auto-rows: 1fr;
+        }
+      }
+    }
+  }
   footer{
     .footerGrid{
       .footerLinks{
@@ -1877,6 +2195,21 @@ footer{
   .cases{
     .grid{
       grid-gap: 80px;
+    }
+  }
+  .blog{
+    .blogContent{
+      width: 70%;
+      margin: 10vw auto 5vw;
+      #post{
+        width: 60%;
+        margin-right: 3%;
+      }
+    }
+  }
+  .bonzaiNews{
+    .bonzaiNewsFlex{
+      width: 70%;
     }
   }
   footer{
@@ -2022,6 +2355,9 @@ footer{
   .casesHeader{
     @include header1920;
   }
+  .blogHeader{
+    @include header1920;
+  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -2076,6 +2412,9 @@ footer{
     .grid{
       width: 80%;
     }
+  }
+  .blogHeader{
+    @include header2560;
   }
 }
 
