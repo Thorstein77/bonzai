@@ -2240,9 +2240,14 @@ footer{
   }
   .newMobile{
     .flex{
-      justify-content: space-around;
+      width: 70%;
+      justify-content: space-between;
+      .mobile{
+        width: 45%;
+        padding: 0;
+      }
       .img{
-        width: 25%;
+        width: 35%;
       }
     }
   }
@@ -2376,7 +2381,7 @@ footer{
   }
   .newMobile{
     .flex{
-      width: 70%;
+      width: 60%;
     }
   }
   .newAministration{

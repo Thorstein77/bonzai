@@ -20,3 +20,6 @@
 <meta property="og:locale" content="da_DK">
 <meta property="og:description" content="Vi designer og udvikler hjemmesider, der er skåret til efter vores kunders behov">
 <meta property="og:title" content="Bonzai Media">
+
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="http://kthor.dk/favicon.png"/>
