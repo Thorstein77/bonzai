@@ -1031,8 +1031,8 @@ footer{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 60% 35%;
-    grid-template-rows: 5fr 9fr;
-    grid-gap: 5%;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
     font-family: $textFont;
     a{
       color: $deepOrange;
@@ -1096,6 +1096,38 @@ footer{
         .newsButton:hover{
           @include buttonHover;
         }
+      }
+    }
+  }
+}
+.errorPage{
+  width: 100%;
+  background-color: $offWhite;
+  padding: 20vw 0;
+  .flex{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14pt;
+    a{
+      font-family: $textFont;
+      font-weight: bold;
+    }
+    h2{
+      font-size: 40pt;
+      margin: 20px 0;
+    }
+    p{
+      font-size: 14pt;
+      margin: 20px 0;
+    }
+    .errorFlex{
+      div{
+        margin: 5px 0;
       }
     }
   }
@@ -1936,7 +1968,7 @@ footer{
     .footerGrid{
       grid-template-columns: 2fr 1fr 2fr;
       grid-template-rows: 1fr;
-      grid-gap: 5%;
+      grid-gap: 15%;
       font-size: 15pt;
       a{
         color: $deepOrange;
@@ -1977,6 +2009,19 @@ footer{
             @include buttonHover;
           }
         }
+      }
+    }
+  }
+  .errorPage{
+    width: 72.488%;
+    margin: 0 0 0 auto;
+    padding: 0;
+    height: 100vh;
+    .flex{
+      height: 100%;
+      font-size: 16pt;
+      h2{
+        font-size: 50pt;
       }
     }
   }
@@ -2375,6 +2420,11 @@ footer{
   }
   .blogHeader{
     @include header1920;
+  }
+  footer {
+    .footerGrid {
+      grid-gap: 25%;
+    }
   }
 }
 
