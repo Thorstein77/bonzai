@@ -78,10 +78,7 @@
 </nav>
 
 <aside class="menuBack">
-    <input type="checkbox" name="menuBackBtn" class="menuBackBtn" id="menuBackBtn">
-    <label for="menuBackBtn">
-        <i class="fas fa-chevron-right"></i>
-    </label>
+    <i class="fas fa-chevron-right"></i>
 
     <nav class="menu menuLoad">
         <div class="logoImg">
