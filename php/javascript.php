@@ -9,12 +9,25 @@
     $headerHeight = $(".menuPlacement").height();
     $menuHide = ($headerHeight / 4);
     $scrollDistance = $(document).scrollTop();
+    $m = 0;
 
     if( ($headerHeight - $menuHide) <= $scrollDistance ){
         $(".menu").addClass("menuNotAtTop");
-    }if( ($headerHeight - $menuHide) > $scrollDistance ){
+    }
+    if( ($headerHeight - $menuHide) > $scrollDistance ){
         $(".menu").removeClass("menuNotAtTop");
     }
+    $(".menuBack").click(function () {
+        $(".menu").removeClass("menuNotAtTop");
+        $m = 1;
+    });
+    $("body").bind("click touchstart", function (event) {
+        $target = $(event.target);
+        if(!$target.closest('.menuBack').length && $m === 1){
+            $(".menu").addClass("menuNotAtTop");
+            $m = 0;
+        }
+    });
 
     $(window).resize(function(){
         $headerHeight = $(".menuPlacement").height();

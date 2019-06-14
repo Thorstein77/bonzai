@@ -1580,13 +1580,8 @@ footer{
     background-color: $midToneBlue;
     font-size: 25pt;
     color: $deepOrange;
-    .menuBackBtn{
-      position: fixed;
-      left: -150px;
-      width: 0;
-    }
-    label{
-      margin: 0 auto;
+    i{
+      text-align: center;
     }
     a{
       text-decoration: none;
