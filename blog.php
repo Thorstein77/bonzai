@@ -9,6 +9,12 @@
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
     <title>Blog - Bonzai Media</title>
+
+    <meta name="description" content="Her ligger vi blogindlæg op hver anden uge.
+    Det kan f.eks. være artikler der omhandler produkt billeder eller hvorvidt e-mærket er rigtigt for dig.">
+
+
+    <link rel="canonical" href="http://kthor.dk/blog">
     <?php
     require ("php/head.php");
     ?>
@@ -35,13 +41,10 @@ require ("php/menu.php");
                 <style type="text/css">
                     .st0{display:none;}
                 </style>
-            <g class="st0">
-                <rect y="-930" class="st1" width="549" height="1076"/>
-            </g>
             <g>
                 <path d="M0.5,145.5h549c0,0,271-5,575-72c351.8-77.5,585-66,795-62V151H0.5V145.5z"/>
             </g>
-            </svg>
+        </svg>
     </section>
 
     <section class="blog">
@@ -51,7 +54,7 @@ require ("php/menu.php");
                     <h4>Alle blogs</h4>
                     <div class="blogList">
                         <ul>
-                            <li><a href="blogPost.php">Gør din webshop lækker</a></li>
+                            <li><a href="artikel#produkt-billeder">Gør din webshop lækker</a></li>
                             <li><a href="#">Bør din virksomhed have e-mærket?</a> </li>
                             <li><a href="#">Undgå at kunden springer fra købet</a> </li>
                             <li><a href="#">Hvilke sociale medier skal jeg bruge?</a> </li>
@@ -73,7 +76,7 @@ require ("php/menu.php");
                     </div>
                     <h4>Gør din webshop lækker<br>– 10 tips til bedre produktbilleder</h4>
                     <p>Lyssætning, sans for detalje og redigering af billeder er alle ting som kan hjælpe dig, med at forbedre dine produktbilleder.</p>
-                    <button onclick="window.location.href = 'blogPost.php';">Læs bloggen</button>
+                    <button onclick="window.location.href = 'artikel#produkt-billeder';">Læs bloggen</button>
                 </article>
                 <hr class="blogLine">
                 <article>
