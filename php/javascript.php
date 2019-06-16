@@ -55,41 +55,56 @@
         });
 
         // Slideshow
-        var slidesWidth = ($(".slideContainer").outerWidth() / $(".slideObject").outerWidth());
-        var slidesShown = Math.floor(slidesWidth);
-        $(".slideObject").last().addClass("lastSlideObject");
-        clone();
-        function clone(){
-            var c;
-            for(c = 0; c < slidesShown; c++){
-                $(".slideObject:eq(" +c+ ")").clone().appendTo("#slideLength");
-            }
-            $(".lastSlideObject").clone().prependTo("#slideLength");
-        }
-        var $slideObject = $(".slideObject");
-        var position = 0;
-        var objectWidth = $slideObject.outerWidth();
-        var countObjects = $slideObject.length;
+
+        // Dots
+        var slideCount = $(".slideObject").length;
         dots();
         function dots(){
             var i;
-            for(i = 0; i < (countObjects - (slidesShown + 1)); i++){
+            for(i = 0; i < slideCount; i++){
                 $("#slideDots").append("<div class='dot'></div>");
             }
         }
         var dot = document.getElementsByClassName("dot");
         $(".dot").first().addClass("firstDot");
         $(".dot").last().addClass("lastDot");
+
+
+        // Clone
+        var maxSlidesShown = 6;
+
+        $(".slideObject").last().addClass("lastSlideObject");
+        clone();
+        function clone(){
+            var c;
+            for(c = 0; c < maxSlidesShown; c++){
+                $(".slideObject:eq(" +c+ ")").clone().appendTo("#slideLength");
+            }
+            $(".lastSlideObject").clone().prependTo("#slideLength");
+        }
+
+        // Slide
+        var position = 0;
         showSlides();
         var n = 1;
         function showSlides(){
-            if(-(objectWidth * countObjects - objectWidth) >= position - (objectWidth * slidesShown)){
+
+            var slidesWidth = ($(".slideContainer").outerWidth() / $(".slideObject").outerWidth());
+            var slidesShown = Math.floor(slidesWidth);
+
+            var $slideObject = $(".slideObject");
+            var objectWidth = $slideObject.outerWidth();
+            var countObjects = ($slideObject.length - (maxSlidesShown - slidesShown) );
+            var totalWidth = (-(objectWidth * countObjects - objectWidth));
+            var positionFinal = (objectWidth * slidesShown);
+
+
+
+            if(totalWidth >= position - positionFinal){
                 position = 0;
                 $slideObject.animate({
                     left: position+'px'
                 }, 0);
-                $(".dot").removeClass(" active");
-                $(".lastDot").addClass(" active");
                 n = 0;
             }else{
                 position = position - objectWidth;
@@ -100,10 +115,18 @@
                 $(".dot:eq("+n+")").addClass(" active");
                 n++;
             }
-            setTimeout(showSlides, 2000)
+            setTimeout(showSlides, 750)
+
         }
         $(".firstDot").addClass(" active");
+
+        $(window).resize(function(){
+
+        });
+
     });
+
+
 
     function myMap() {
         var mapProp= {
