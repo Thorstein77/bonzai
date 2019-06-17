@@ -374,6 +374,7 @@ a{
           margin: 0 2.5px;
           border-radius: 50%;
           background-color: #a9a9a9;
+          transition: 500ms;
         }
         .active{
           background-color: $offWhite;

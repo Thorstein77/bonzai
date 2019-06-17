@@ -116,7 +116,6 @@
                     left: position+'px'
                 }, 0);
                 n = 0;
-                return false;
             }
             $(window).resize(function(){
                 clearTimeout(resizeTimer);
