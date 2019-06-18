@@ -5,7 +5,7 @@
                 Klar til at komme i gang?
             </h4>
 
-            <a href="mailto:info@bonzaimedia.dk" itemprop="email">
+            <a href="mailto:info@bonzaimedia.dk">
                 - Kontakt os!
             </a>
 
@@ -14,8 +14,25 @@
             </p>
 
             <p>
-                Mail: info@bonzaimedia.dk
+                Mail: <span itemprop="email">info@bonzaimedia.dk</span>
             </p>
+
+            <p>
+                <span itemprop="name">
+                    Bonzai Media
+                </span>
+            </p>
+
+            <p>
+                <span itemprop="address">
+                    Hersegade 20,<br>
+                    4000 Roskilde
+                </span>
+            </p>
+
+            <div style="display: none">
+                <img src="../images/svg/bonzai-favicon-teal-and-white.svg" itemprop="image" alt="Bonzai Media logo">
+            </div>
         </div>
 
         <div class="footerLinks">

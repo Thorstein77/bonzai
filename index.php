@@ -196,7 +196,7 @@ require ("php/menu.php");
                 I denne tid har vi arbejdet med kunder, store som små, på at udvikle de helt rigtige løsninger til dem. Vi kan også finde den rigtige løsning til dig.
             </p>
 
-            <p>
+            <
                 Her er nogle af de kunder, som vi har arbejdet med, og <a href="referencer">her</a> kan du se eksempler på nogle af de cases vi har lavet
             </p>
         </div>

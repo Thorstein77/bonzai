@@ -374,6 +374,7 @@ a{
           margin: 0 2.5px;
           border-radius: 50%;
           background-color: #a9a9a9;
+          transition: 500ms;
         }
         .active{
           background-color: $offWhite;
@@ -2327,6 +2328,18 @@ footer{
     }
     .grid{
       margin: 20px auto 10vw;
+      grid-gap: 40px;
+      .gridObject{
+        div{
+          i{
+            font-size: 40pt;
+          }
+          p{
+            font-size: 18pt;
+            margin: 15px 0 0 0;
+          }
+        }
+      }
     }
     svg{
       bottom: -10.1vw;
